@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import CTAButton from '../components/CTAButton.astro';
+---
+
+<BaseLayout title="Page Not Found">
+  <section class="relative min-h-screen flex items-center justify-center bg-abyss overflow-hidden">
+    <!-- Atmospheric gradient overlay -->
+    <div
+      class="pointer-events-none absolute inset-0"
+      style="background: radial-gradient(ellipse at 50% 40%, rgba(139,92,246,0.08) 0%, transparent 70%)"
+      aria-hidden="true"
+    ></div>
+
+    <!-- Glow orb -->
+    <div class="glow-orb w-[350px] h-[350px] bg-gold-solar/10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" aria-hidden="true"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 max-w-[680px] mx-auto px-6 text-center">
+      <SectionHeader label="404" title="Page Not Found" tag="h1" />
+      <p class="font-body text-lg text-moonstone/80 mb-10 leading-relaxed">
+        The path you seek has not yet been revealed. Return to the beginning and continue your journey.
+      </p>
+      <CTAButton href="/" text="Return Home" animated external={false} />
+    </div>
+  </section>
+</BaseLayout>

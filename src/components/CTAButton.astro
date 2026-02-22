@@ -3,15 +3,15 @@ interface Props {
   href: string;
   text: string;
   animated?: boolean;
+  external?: boolean;
 }
 
-const { href, text, animated = false } = Astro.props;
+const { href, text, animated = false, external = true } = Astro.props;
 ---
 
 <a
   href={href}
-  target="_blank"
-  rel="noopener noreferrer"
+  {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
   class:list={["cta-button", { "cta-button--animated": animated }]}
 >
   {text}
