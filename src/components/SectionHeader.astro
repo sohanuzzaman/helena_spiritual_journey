@@ -1,0 +1,20 @@
+---
+interface Props {
+  label: string;
+  title: string;
+  id?: string;
+  tag?: 'h1' | 'h2' | 'h3';
+}
+
+const { label, title, id, tag: Tag = 'h2' } = Astro.props;
+---
+
+<header class="text-center mb-12">
+  <p class="font-accent font-medium text-[0.875rem] tracking-[0.2em] uppercase text-gold-solar mb-4">
+    {label}
+  </p>
+  <Tag id={id} class="font-heading font-medium text-pearl-white mb-6">
+    {title}
+  </Tag>
+  <div class="section-divider" aria-hidden="true"></div>
+</header>

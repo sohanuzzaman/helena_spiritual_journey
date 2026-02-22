@@ -1,0 +1,44 @@
+---
+import SectionHeader from '../SectionHeader.astro';
+import FeatureCard from '../FeatureCard.astro';
+import QuoteBlock from '../QuoteBlock.astro';
+---
+
+<section class="bg-abyss py-16 md:py-24 lg:py-32" aria-labelledby="sacred-circle-title">
+  <div class="max-w-[960px] mx-auto px-6">
+    <div class="reveal">
+      <SectionHeader label="Sacred Circle" title="Inside the sacred circle" id="sacred-circle-title" />
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+      <div class="reveal">
+        <FeatureCard
+          title="Unfiltered ceremony"
+          description="Raw, intimate moments from rituals and sacred practices at each site"
+        />
+      </div>
+      <div class="reveal">
+        <FeatureCard
+          title="Transmissions from the land"
+          description="My reflections, downloads, and channeled insights as I walk the ancient paths"
+        />
+      </div>
+      <div class="reveal">
+        <FeatureCard
+          title="Behind the veil"
+          description="The preparation, the silence before ceremony, the moments between — what you never see on a public feed"
+        />
+      </div>
+      <div class="reveal">
+        <FeatureCard
+          title="A living map"
+          description="Follow the pilgrimage in real time as it unfolds across continents"
+        />
+      </div>
+    </div>
+
+    <div class="reveal">
+      <QuoteBlock quote="This is not content. This is a transmission. A thread connecting you to the places where the earth still speaks." />
+    </div>
+  </div>
+</section>

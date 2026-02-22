@@ -1,0 +1,42 @@
+---
+import CTAButton from '../CTAButton.astro';
+---
+
+<section class="hero relative min-h-screen flex items-center justify-center bg-abyss overflow-hidden" aria-label="Hero">
+  <!-- Background image -->
+  <img
+    src="/helena-kneeling-prayer-ancient-egyptian-temple-arch-nile-sunset.jpeg"
+    alt=""
+    fetchpriority="high"
+    decoding="async"
+    class="absolute inset-0 w-full h-full object-cover"
+  />
+
+  <!-- Dark gradient overlay -->
+  <div class="absolute inset-0 bg-gradient-to-b from-abyss/30 to-abyss/70" aria-hidden="true"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 text-center px-6 max-w-[680px]">
+    <div class="reveal">
+      <p class="font-accent font-medium text-[0.875rem] tracking-[0.2em] uppercase text-gold-solar mb-6">
+        Sacred Pilgrimage
+      </p>
+    </div>
+
+    <div class="reveal">
+      <h1 class="text-gold-gradient font-heading font-normal leading-[1.05] mb-8" style="font-size: clamp(3rem, 8vw, 6rem);">
+        Walk the sacred path with me.
+      </h1>
+    </div>
+
+    <div class="reveal">
+      <p class="text-pearl-white text-lg leading-relaxed mb-10 max-w-[680px] mx-auto">
+        I'm traveling to the temples, vortexes, and ancient sites that hold the memory of the earth — and I'm opening a window for you to witness it all. A private journey, shared through a sacred circle on Instagram.
+      </p>
+    </div>
+
+    <div class="reveal">
+      <CTAButton href="https://www.instagram.com/" text="Subscribe on Instagram" animated={true} />
+    </div>
+  </div>
+</section>

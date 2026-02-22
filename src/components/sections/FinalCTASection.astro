@@ -1,0 +1,30 @@
+---
+import CTAButton from '../CTAButton.astro';
+---
+
+<section class="bg-abyss py-16 md:py-24 lg:py-32" aria-labelledby="final-cta-title">
+  <div class="max-w-[680px] mx-auto px-6 text-center">
+    <div class="reveal">
+      <p class="font-accent font-medium text-[0.875rem] tracking-[0.2em] uppercase text-gold-solar mb-4">
+        Begin
+      </p>
+      <h2 id="final-cta-title" class="font-heading font-medium text-pearl-white mb-6">
+        The journey begins in March.
+      </h2>
+      <div class="section-divider mb-10" aria-hidden="true"></div>
+    </div>
+
+    <div class="reveal">
+      <p class="mb-6">
+        Subscribe to my private Instagram to receive every moment of this sacred pilgrimage — the rituals, the reflections, the ancient wisdom rising from the earth.
+      </p>
+      <p class="text-gold-glow font-medium text-lg mb-10">
+        $X/month — Cancel anytime.
+      </p>
+    </div>
+
+    <div class="reveal">
+      <CTAButton href="https://www.instagram.com/" text="Subscribe on Instagram" animated={true} />
+    </div>
+  </div>
+</section>

@@ -11,7 +11,9 @@
     "cf-preview": "astro build && wrangler dev"
   },
   "dependencies": {
-    "astro": "^5.17.1"
+    "@tailwindcss/vite": "^4.2.0",
+    "astro": "^5.17.1",
+    "tailwindcss": "^4.2.0"
   },
   "devDependencies": {
     "wrangler": "^4.67.0"
