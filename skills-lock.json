@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "skills": {
+    "astro": {
+      "source": "astrolicious/agent-skills",
+      "sourceType": "github",
+      "computedHash": "597a4587f30f1152d3ab2923e84db842a18604e09e16885ffa067730fb435d9d"
+    },
+    "copywriting": {
+      "source": "coreyhaines31/marketingskills",
+      "sourceType": "github",
+      "computedHash": "39b7a636c7e254a2f08dee43db6b9f6faf6723de999a6bbce2eb5ac95a130207"
+    },
+    "seo-audit": {
+      "source": "coreyhaines31/marketingskills",
+      "sourceType": "github",
+      "computedHash": "6bd4cde58bb701b5dc90a0fae2f0ea3efc7c3e6fd2ae754083fa659930e7d39f"
+    },
+    "visual-design-foundations": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "computedHash": "5c5e091d61e2f6e465b77650b99d36acfe779cb70f29e9a103b5ba443065a3a9"
+    }
+  }
+}
