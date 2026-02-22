@@ -4,8 +4,14 @@ import FeatureCard from '../FeatureCard.astro';
 import QuoteBlock from '../QuoteBlock.astro';
 ---
 
-<section class="bg-abyss py-16 md:py-24 lg:py-32" aria-labelledby="sacred-circle-title">
-  <div class="max-w-[960px] mx-auto px-6">
+<section class="relative bg-abyss py-16 md:py-24 lg:py-32 overflow-hidden" aria-labelledby="sacred-circle-title">
+  <!-- Atmospheric radial gradient dome -->
+  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_center,_rgba(107,63,160,0.08)_0%,_transparent_60%)]" aria-hidden="true"></div>
+
+  <!-- Ambient purple glow orb behind card grid -->
+  <div class="glow-orb w-[500px] h-[500px] bg-purple-violet/[0.08] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" aria-hidden="true"></div>
+
+  <div class="relative z-[1] max-w-[960px] mx-auto px-6">
     <div class="reveal">
       <SectionHeader label="Sacred Circle" title="Inside the sacred circle" id="sacred-circle-title" />
     </div>

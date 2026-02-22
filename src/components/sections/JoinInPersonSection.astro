@@ -3,8 +3,11 @@ import SectionHeader from '../SectionHeader.astro';
 import CTAButton from '../CTAButton.astro';
 ---
 
-<section class="bg-depth py-16 md:py-24 lg:py-32" aria-labelledby="join-title">
-  <div class="max-w-[680px] mx-auto px-6">
+<section class="relative bg-depth py-16 md:py-24 lg:py-32 overflow-hidden" aria-labelledby="join-title">
+  <!-- Atmospheric radial gradient dome -->
+  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_center,_rgba(107,63,160,0.06)_0%,_transparent_60%)]" aria-hidden="true"></div>
+
+  <div class="relative z-[1] max-w-[680px] mx-auto px-6">
     <div class="reveal">
       <SectionHeader label="Walk With Me" title="Some paths are meant to be walked together" id="join-title" />
     </div>

@@ -14,7 +14,8 @@ const { title, description } = Astro.props;
 
 <style>
   .feature-card {
-    transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
+    transition: transform 0.4s ease-out, box-shadow 0.4s ease-out, border-color 0.4s ease-out;
+    border-top: 1px solid transparent;
   }
 
   .feature-card:hover {
@@ -22,5 +23,6 @@ const { title, description } = Astro.props;
     box-shadow:
       0 0 20px rgba(242, 201, 76, 0.1),
       0 12px 40px rgba(0, 0, 0, 0.3);
+    border-top-color: rgba(242, 201, 76, 0.2);
   }
 </style>

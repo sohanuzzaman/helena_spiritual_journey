@@ -187,6 +187,25 @@
     filter: saturate(1.05) contrast(1.02);
     overflow: hidden;
   }
+
+  /* Golden vignette overlay on treated images */
+  .image-treated::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 8px;
+    background: radial-gradient(ellipse at center, transparent 50%, rgba(139, 105, 20, 0.2) 100%);
+    pointer-events: none;
+  }
+
+  /* Ambient glow orbs — light filtering through deep water */
+  .glow-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    pointer-events: none;
+    z-index: 0;
+  }
 }
 
 /* ============================================================
@@ -219,6 +238,15 @@
   @keyframes breathe {
     0%, 100% { opacity: 0.3; }
     50%      { opacity: 0.6; }
+  }
+
+  .section-divider {
+    animation: breathe-divider 6s ease-in-out infinite;
+  }
+
+  @keyframes breathe-divider {
+    0%, 100% { opacity: 0.5; }
+    50%      { opacity: 1; }
   }
 }
 
