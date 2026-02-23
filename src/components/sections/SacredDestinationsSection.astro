@@ -1,0 +1,105 @@
+---
+import SectionHeader from "../SectionHeader.astro";
+import DestinationCard from "../DestinationCard.astro";
+---
+
+<section
+  class="relative bg-abyss py-16 md:py-24 lg:py-32 overflow-hidden"
+  aria-labelledby="destinations-title"
+>
+  <!-- Atmospheric radial gradient dome -->
+  <div
+    class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_center,_rgba(156,39,176,0.12)_0%,_rgba(255,215,0,0.06)_50%,_transparent_80%)]"
+    aria-hidden="true"
+  >
+  </div>
+
+  <!-- Ambient glow orb -->
+  <div
+    class="glow-orb w-[600px] h-[600px] bg-purple-violet/[0.12] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+    aria-hidden="true"
+  >
+  </div>
+
+  <div class="relative z-[1] max-w-[960px] mx-auto px-6">
+    <div class="reveal">
+      <SectionHeader
+        label="Sacred Ground"
+        title="Where the earth still speaks"
+        id="destinations-title"
+      />
+    </div>
+
+    <div class="reveal mb-12 max-w-[680px] mx-auto text-center">
+      <p>
+        Each destination on this pilgrimage was chosen not for its beauty —
+        though beauty is inevitable — but for its frequency. These are places
+        where the veil is thin, where the land itself holds memory, and where
+        the body begins to remember what the mind has forgotten.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="reveal">
+        <DestinationCard
+          name="Egypt"
+          tagline="The motherland of mystery"
+          description="Pyramids, temples, and tombs that still pulse with the energy of initiates who walked these halls thousands of years before us."
+          primaryImage={{
+            src: "/great-pyramid-giza-night-crescent-moon-dark-sky-portrait.jpeg",
+            alt: "Great Pyramid of Giza under night sky with crescent moon",
+          }}
+          secondaryImage={{
+            src: "/helena-pink-robe-namaste-pose-great-sphinx-giza-portrait.jpeg",
+            alt: "Helena in pink robe in namaste pose before the Great Sphinx",
+          }}
+        />
+      </div>
+      <div class="reveal">
+        <DestinationCard
+          name="Cappadocia"
+          tagline="Carved by wind and worship"
+          description="Underground cities and rock-cut churches where early mystics retreated into the earth to find the divine."
+          primaryImage={{
+            src: "/hot-air-balloons-cappadocia-valleys-sunrise-aerial-landscape.jpeg",
+            alt: "Hot air balloons over Cappadocia valleys at sunrise",
+          }}
+          secondaryImage={{
+            src: "/helena-pink-dress-ancient-cave-rock-formation-cappadocia-portrait.jpeg",
+            alt: "Helena in pink dress at ancient cave rock formation in Cappadocia",
+          }}
+        />
+      </div>
+      <div class="reveal">
+        <DestinationCard
+          name="Bali"
+          tagline="The island of living ceremony"
+          description="Waterfalls, temples, and jungle sanctuaries where daily offerings keep the doorway between worlds open."
+          primaryImage={{
+            src: "/helena-white-dress-arms-raised-waterfall-bali-portrait.jpg",
+            alt: "Helena in white dress with arms raised at a waterfall in Bali",
+          }}
+          secondaryImage={{
+            src: "/helena-white-dress-crystal-singing-bowl-waterfall-bali-portrait.jpg",
+            alt: "Helena with crystal singing bowl near waterfall in Bali",
+          }}
+        />
+      </div>
+      <div class="reveal">
+        <DestinationCard
+          name="Istanbul"
+          tagline="Where empires prayed"
+          description="Byzantine cisterns and ancient crossroads where East meets West beneath centuries of sacred architecture."
+          primaryImage={{
+            src: "/basilica-cistern-istanbul-ancient-columns-water-reflection-portrait.jpeg",
+            alt: "Basilica Cistern in Istanbul with ancient columns reflected in water",
+          }}
+          secondaryImage={{
+            src: "/ancient-rock-art-petroglyphs-red-stone-cliff-portrait.jpeg",
+            alt: "Ancient rock art petroglyphs on red stone cliff",
+          }}
+        />
+      </div>
+    </div>
+  </div>
+</section>

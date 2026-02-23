@@ -1,0 +1,59 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  imageSrc?: string;
+  imageAlt?: string;
+}
+
+const { title, description, imageSrc, imageAlt = '' } = Astro.props;
+---
+
+<div class:list={['feature-card', 'glass-card', 'border-l-[3px]', 'border-l-gold-solar', { 'feature-card--with-image': !!imageSrc }]}>
+  {imageSrc && (
+    <div class="feature-card__thumb">
+      <img
+        src={imageSrc}
+        alt={imageAlt}
+        loading="lazy"
+        decoding="async"
+        class="w-full h-full object-cover rounded-lg"
+      />
+    </div>
+  )}
+  <div>
+    <h3 class="font-heading font-semibold text-pearl-white mb-2">{title}</h3>
+    <p class="text-purple-mist text-base leading-relaxed">{description}</p>
+  </div>
+</div>
+
+<style>
+  .feature-card {
+    transition: transform 0.4s ease-out, box-shadow 0.4s ease-out, border-color 0.4s ease-out;
+    border-top: 1px solid transparent;
+  }
+
+  .feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow:
+      0 0 20px rgba(242, 201, 76, 0.1),
+      0 12px 40px rgba(0, 0, 0, 0.3);
+    border-top-color: rgba(242, 201, 76, 0.2);
+  }
+
+  .feature-card--with-image {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .feature-card__thumb {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    box-shadow: 0 0 15px rgba(156, 39, 176, 0.15);
+  }
+</style>

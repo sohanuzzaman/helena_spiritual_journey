@@ -1,5 +1,6 @@
 ---
 import SectionHeader from "../SectionHeader.astro";
+import ImagePair from "../ImagePair.astro";
 import CTAButton from "../CTAButton.astro";
 ---
 
@@ -50,6 +51,20 @@ import CTAButton from "../CTAButton.astro";
           class="w-full h-auto block rounded-lg"
         />
       </div>
+    </div>
+
+    <div class="reveal mt-12">
+      <ImagePair
+        image1={{
+          src: "/two-women-cave-entrance-rocky-desert-landscape-portrait.jpeg",
+          alt: "Two women at cave entrance in rocky desert landscape",
+        }}
+        image2={{
+          src: "/person-cave-entrance-night-dog-city-lights-portrait.jpeg",
+          alt: "Person at cave entrance at night with city lights below",
+        }}
+        layout="equal"
+      />
     </div>
 
     <div class="reveal mt-12 text-center">

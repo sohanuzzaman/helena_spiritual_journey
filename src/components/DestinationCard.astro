@@ -1,0 +1,65 @@
+---
+interface Props {
+  name: string;
+  tagline: string;
+  description: string;
+  primaryImage: { src: string; alt: string };
+  secondaryImage: { src: string; alt: string };
+}
+
+const { name, tagline, description, primaryImage, secondaryImage } = Astro.props;
+---
+
+<article class="destination-card glass-card">
+  <div class="destination-card__images relative">
+    <img
+      src={primaryImage.src}
+      alt={primaryImage.alt}
+      loading="lazy"
+      decoding="async"
+      class="w-full h-56 object-cover block rounded-lg"
+    />
+    <div class="destination-card__secondary">
+      <img
+        src={secondaryImage.src}
+        alt={secondaryImage.alt}
+        loading="lazy"
+        decoding="async"
+        class="w-full h-full object-cover block rounded-lg"
+      />
+    </div>
+  </div>
+  <div class="mt-5">
+    <p class="font-accent font-medium text-[0.75rem] tracking-[0.2em] uppercase text-gold-solar mb-1">
+      {name}
+    </p>
+    <h3 class="font-heading font-semibold text-pearl-white mb-2">{tagline}</h3>
+    <p class="text-purple-mist text-sm leading-relaxed">{description}</p>
+  </div>
+</article>
+
+<style>
+  .destination-card {
+    transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
+  }
+
+  .destination-card:hover {
+    transform: translateY(-4px);
+    box-shadow:
+      0 0 20px rgba(242, 201, 76, 0.1),
+      0 12px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  .destination-card__secondary {
+    position: absolute;
+    bottom: -8px;
+    right: -8px;
+    width: 72px;
+    height: 72px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+</style>

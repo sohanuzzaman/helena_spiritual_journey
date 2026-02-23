@@ -1,15 +1,38 @@
 ---
-// Full-bleed cinematic image break — Helena with amethyst crystal at the ocean
+// Full-bleed cinematic image break — parameterized for reuse
 // Decorative only: no semantic content, aria-hidden
+
+interface Props {
+  imageSrc: string;
+  objectPosition?: string;
+  blendTopColor?: 'abyss' | 'depth';
+  blendBottomColor?: 'abyss' | 'depth';
+}
+
+const {
+  imageSrc,
+  objectPosition = 'center 35%',
+  blendTopColor = 'abyss',
+  blendBottomColor = 'depth',
+} = Astro.props;
+
+const colorMap: Record<string, { cssVar: string; rgb: string }> = {
+  abyss: { cssVar: 'var(--color-abyss)', rgb: '11,0,20' },
+  depth: { cssVar: 'var(--color-depth)', rgb: '26,10,46' },
+};
+
+const top = colorMap[blendTopColor];
+const bottom = colorMap[blendBottomColor];
 ---
 
 <div class="crystal-interlude reveal" aria-hidden="true">
   <img
-    src="/helena-white-dress-amethyst-crystal-ocean-beach.jpg"
+    src={imageSrc}
     alt=""
     loading="lazy"
     decoding="async"
-    class="absolute inset-0 w-full h-full object-cover object-[center_35%]"
+    class="absolute inset-0 w-full h-full object-cover"
+    style={`object-position: ${objectPosition};`}
   />
 
   <!-- Purple and Gold radial vignette from edges -->
@@ -25,17 +48,17 @@
   >
   </div>
 
-  <!-- Top edge blend into previous section (abyss) -->
+  <!-- Top edge blend into previous section -->
   <div
     class="absolute inset-x-0 top-[-5px] h-96"
-    style="background: linear-gradient(to bottom, var(--color-abyss) 0%, rgba(11,0,20,0.95) 15%, rgba(11,0,20,0.85) 30%, rgba(11,0,20,0.65) 50%, rgba(11,0,20,0.3) 75%, rgba(11,0,20,0.05) 90%, transparent 100%);"
+    style={`background: linear-gradient(to bottom, ${top.cssVar} 0%, rgba(${top.rgb},0.95) 15%, rgba(${top.rgb},0.85) 30%, rgba(${top.rgb},0.65) 50%, rgba(${top.rgb},0.3) 75%, rgba(${top.rgb},0.05) 90%, transparent 100%);`}
   >
   </div>
 
-  <!-- Bottom edge blend into next section (depth) -->
+  <!-- Bottom edge blend into next section -->
   <div
     class="absolute inset-x-0 bottom-[-5px] h-[500px]"
-    style="background: linear-gradient(to top, var(--color-depth) 0%, var(--color-depth) 5%, rgba(26,10,46,0.95) 20%, rgba(26,10,46,0.85) 40%, rgba(26,10,46,0.6) 60%, rgba(26,10,46,0.25) 80%, rgba(26,10,46,0.05) 95%, transparent 100%);"
+    style={`background: linear-gradient(to top, ${bottom.cssVar} 0%, ${bottom.cssVar} 5%, rgba(${bottom.rgb},0.95) 20%, rgba(${bottom.rgb},0.85) 40%, rgba(${bottom.rgb},0.6) 60%, rgba(${bottom.rgb},0.25) 80%, rgba(${bottom.rgb},0.05) 95%, transparent 100%);`}
   >
   </div>
 </div>

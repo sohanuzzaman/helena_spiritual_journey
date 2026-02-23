@@ -1,0 +1,52 @@
+---
+interface Props {
+  image1: { src: string; alt: string };
+  image2: { src: string; alt: string };
+  layout?: 'equal' | 'hero-accent';
+}
+
+const { image1, image2, layout = 'equal' } = Astro.props;
+---
+
+<div class:list={['image-pair', `image-pair--${layout}`]}>
+  <div class="image-pair__item reveal">
+    <div class="image-treated">
+      <img
+        src={image1.src}
+        alt={image1.alt}
+        loading="lazy"
+        decoding="async"
+        class="w-full h-auto block rounded-lg"
+      />
+    </div>
+  </div>
+  <div class="image-pair__item reveal">
+    <div class="image-treated">
+      <img
+        src={image2.src}
+        alt={image2.alt}
+        loading="lazy"
+        decoding="async"
+        class="w-full h-auto block rounded-lg"
+      />
+    </div>
+  </div>
+</div>
+
+<style>
+  .image-pair {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 768px) {
+    .image-pair--equal {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .image-pair--hero-accent {
+      grid-template-columns: 1.5fr 1fr;
+    }
+  }
+</style>

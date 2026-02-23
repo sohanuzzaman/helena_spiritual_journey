@@ -1,0 +1,86 @@
+---
+import SectionHeader from "../SectionHeader.astro";
+import ImagePair from "../ImagePair.astro";
+import QuoteBlock from "../QuoteBlock.astro";
+---
+
+<section
+  class="relative bg-depth py-16 md:py-24 lg:py-32 overflow-hidden"
+  aria-labelledby="consciousness-title"
+>
+  <!-- Atmospheric radial gradient dome -->
+  <div
+    class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_center,_rgba(255,215,0,0.1)_0%,_rgba(156,39,176,0.15)_40%,_transparent_70%)]"
+    aria-hidden="true"
+  >
+  </div>
+
+  <!-- Ambient glow orb -->
+  <div
+    class="glow-orb w-[500px] h-[500px] bg-purple-orchid/10 top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2"
+    aria-hidden="true"
+  >
+  </div>
+
+  <div class="relative z-[1] max-w-[680px] mx-auto px-6">
+    <div class="reveal">
+      <SectionHeader
+        label="The Frequency"
+        title="Consciousness is not created. It is received."
+        id="consciousness-title"
+      />
+    </div>
+
+    <div class="reveal mt-12">
+      <div class="image-treated">
+        <img
+          src="/helena-blue-dress-shaft-of-light-egyptian-temple-corridor-portrait.jpeg"
+          alt="Helena in blue dress standing in a shaft of light inside an Egyptian temple corridor"
+          loading="lazy"
+          decoding="async"
+          class="w-full h-auto block rounded-lg"
+        />
+      </div>
+    </div>
+
+    <div class="reveal space-y-6 mt-12">
+      <p>
+        We have been taught that consciousness is a product of the brain — a
+        mechanical spark born from matter. But the ancient builders knew
+        differently. They understood that awareness is a signal, downloaded from
+        the ether, received through the plasma field that connects all living
+        things.
+      </p>
+
+      <p>
+        The sacred sites are not monuments to the past. They are antennae —
+        nodes in a living network that still transmits. When you stand inside a
+        temple, a cave, a stone circle, your body becomes a crystal tuning fork,
+        vibrating in resonance with frequencies the modern world has forgotten.
+      </p>
+
+      <p>
+        This pilgrimage is not about visiting places. It is about remembering
+        how to receive.
+      </p>
+    </div>
+
+    <div class="reveal mt-12">
+      <ImagePair
+        image1={{
+          src: "/crystal-gemstone-altar-gold-vase-desert-sand-dunes-portrait.jpeg",
+          alt: "Crystal gemstones and gold vase altar in desert sand dunes",
+        }}
+        image2={{
+          src: "/colorful-raw-crystals-collection-ocean-rocks-closeup-landscape.jpeg",
+          alt: "Collection of colorful raw crystals on ocean rocks",
+        }}
+        layout="equal"
+      />
+    </div>
+
+    <div class="reveal">
+      <QuoteBlock quote="The temples were not built to worship. They were built to receive." />
+    </div>
+  </div>
+</section>

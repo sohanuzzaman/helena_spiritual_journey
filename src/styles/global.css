@@ -242,6 +242,66 @@
     z-index: 0;
     mix-blend-mode: screen;
   }
+
+  /* --------------------------------------------------------
+     Image Gallery — CSS Columns masonry + CSS Grid uniform
+     -------------------------------------------------------- */
+
+  .image-gallery {
+    width: 100%;
+  }
+
+  /* Masonry variant (CSS columns) */
+  .image-gallery--masonry {
+    column-gap: 1rem;
+  }
+
+  .image-gallery--masonry .image-gallery__item {
+    break-inside: avoid;
+    margin-bottom: 1rem;
+  }
+
+  /* Column counts — mobile-first (1 column) */
+  .image-gallery--masonry.image-gallery--2col { columns: 1; }
+  .image-gallery--masonry.image-gallery--3col { columns: 1; }
+  .image-gallery--masonry.image-gallery--4col { columns: 1; }
+
+  @media (min-width: 768px) {
+    .image-gallery--masonry.image-gallery--2col { columns: 2; }
+    .image-gallery--masonry.image-gallery--3col { columns: 2; }
+    .image-gallery--masonry.image-gallery--4col { columns: 2; }
+  }
+
+  @media (min-width: 1024px) {
+    .image-gallery--masonry.image-gallery--3col { columns: 3; }
+    .image-gallery--masonry.image-gallery--4col { columns: 3; }
+  }
+
+  @media (min-width: 1440px) {
+    .image-gallery--masonry.image-gallery--4col { columns: 4; }
+  }
+
+  /* Uniform variant (CSS Grid) */
+  .image-gallery--uniform {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 768px) {
+    .image-gallery--uniform.image-gallery--2col { grid-template-columns: repeat(2, 1fr); }
+    .image-gallery--uniform.image-gallery--3col { grid-template-columns: repeat(2, 1fr); }
+    .image-gallery--uniform.image-gallery--4col { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (min-width: 1024px) {
+    .image-gallery--uniform.image-gallery--3col { grid-template-columns: repeat(3, 1fr); }
+    .image-gallery--uniform.image-gallery--4col { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  @media (min-width: 1440px) {
+    .image-gallery--uniform.image-gallery--4col { grid-template-columns: repeat(4, 1fr); }
+  }
 }
 
 /* ============================================================

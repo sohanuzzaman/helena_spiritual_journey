@@ -1,0 +1,33 @@
+---
+interface GalleryImage {
+  src: string;
+  alt: string;
+  portrait?: boolean;
+}
+
+interface Props {
+  images: GalleryImage[];
+  columns?: 2 | 3 | 4;
+  variant?: 'masonry' | 'uniform';
+}
+
+const { images, columns = 3, variant = 'masonry' } = Astro.props;
+
+const colClass = `image-gallery--${columns}col`;
+---
+
+<div class:list={['image-gallery', `image-gallery--${variant}`, colClass]}>
+  {images.map((img) => (
+    <div class:list={['image-gallery__item', 'reveal', { 'image-gallery__item--portrait': img.portrait }]}>
+      <div class="image-treated">
+        <img
+          src={img.src}
+          alt={img.alt}
+          loading="lazy"
+          decoding="async"
+          class="w-full h-auto block"
+        />
+      </div>
+    </div>
+  ))}
+</div>

@@ -1,0 +1,132 @@
+---
+import SectionHeader from "../SectionHeader.astro";
+import ImageGallery from "../ImageGallery.astro";
+---
+
+<section
+  class="relative bg-abyss py-16 md:py-24 lg:py-32 overflow-hidden"
+  aria-labelledby="past-journeys-title"
+>
+  <!-- Atmospheric radial gradient dome -->
+  <div
+    class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_center,_rgba(156,39,176,0.1)_0%,_rgba(255,215,0,0.06)_50%,_transparent_80%)]"
+    aria-hidden="true"
+  >
+  </div>
+
+  <div class="relative z-[1] max-w-[1200px] mx-auto px-6">
+    <div class="reveal">
+      <SectionHeader
+        label="Past Journeys"
+        title="The circles that came before"
+        id="past-journeys-title"
+      />
+    </div>
+
+    <div class="reveal mb-12 max-w-[680px] mx-auto text-center">
+      <p>
+        Every pilgrimage leaves a mark — not just on the land, but on the women
+        who walk it. These are the faces, the places, and the moments from
+        journeys that changed us forever.
+      </p>
+    </div>
+
+    <ImageGallery
+      images={[
+        {
+          src: "/spiritual-group-photo-great-sphinx-giza-egypt-portrait.jpeg",
+          alt: "Spiritual group photo at the Great Sphinx in Giza, Egypt",
+          portrait: true,
+        },
+        {
+          src: "/spiritual-retreat-group-circle-rooftop-pyramids-sunset-egypt-landscape.jpeg",
+          alt: "Spiritual retreat group circle on rooftop with pyramids at sunset",
+        },
+        {
+          src: "/large-group-photo-rock-wall-ancient-sacred-art-cappadocia-portrait.jpeg",
+          alt: "Large group photo at rock wall with ancient sacred art in Cappadocia",
+          portrait: true,
+        },
+        {
+          src: "/spiritual-group-guided-tour-philae-temple-egypt-landscape.jpeg",
+          alt: "Spiritual group guided tour at Philae Temple in Egypt",
+        },
+        {
+          src: "/group-pink-outfits-frescoed-cave-church-cappadocia-turkey-portrait.jpeg",
+          alt: "Group in pink outfits at frescoed cave church in Cappadocia",
+          portrait: true,
+        },
+        {
+          src: "/spiritual-group-inside-egyptian-temple-hieroglyphic-walls-landscape.jpeg",
+          alt: "Spiritual group inside Egyptian temple with hieroglyphic walls",
+        },
+        {
+          src: "/helena-group-women-ancient-obelisk-ruins-egypt-golden-hour-portrait.jpeg",
+          alt: "Helena with group of women at ancient obelisk ruins in Egypt at golden hour",
+          portrait: true,
+        },
+        {
+          src: "/spiritual-group-white-hilltop-dramatic-blue-sky-cappadocia-portrait.jpeg",
+          alt: "Spiritual group in white on hilltop with dramatic blue sky in Cappadocia",
+          portrait: true,
+        },
+        {
+          src: "/women-pink-robes-group-meditation-cave-cappadocia-landscape.jpeg",
+          alt: "Women in pink robes in group meditation in cave in Cappadocia",
+        },
+        {
+          src: "/spiritual-retreat-group-bw-ancient-stone-chamber-landscape.jpeg",
+          alt: "Spiritual retreat group in black and white at ancient stone chamber",
+        },
+        {
+          src: "/women-colorful-robes-cave-rock-formation-cappadocia-portrait.jpeg",
+          alt: "Women in colorful robes at cave rock formation in Cappadocia",
+          portrait: true,
+        },
+        {
+          src: "/spiritual-retreat-group-photo-ancient-stone-chamber-landscape.jpeg",
+          alt: "Spiritual retreat group photo at ancient stone chamber",
+        },
+        {
+          src: "/women-pink-outfits-relaxing-rock-cave-cappadocia-portrait.jpeg",
+          alt: "Women in pink outfits relaxing in rock cave in Cappadocia",
+          portrait: true,
+        },
+        {
+          src: "/women-pink-sitting-ancient-rock-cut-ruins-cappadocia-portrait.jpeg",
+          alt: "Women in pink sitting at ancient rock-cut ruins in Cappadocia",
+          portrait: true,
+        },
+        {
+          src: "/helena-group-sand-dunes-egypt-crystals-gold-vase-landscape.jpeg",
+          alt: "Helena with group in sand dunes of Egypt with crystals and gold vase",
+        },
+        {
+          src: "/group-circle-workshop-rustic-wooden-attic-studio-portrait.jpeg",
+          alt: "Group circle workshop in rustic wooden attic studio",
+          portrait: true,
+        },
+        {
+          src: "/two-children-posing-great-pyramids-giza-egypt-landscape.jpg",
+          alt: "Two children posing before the Great Pyramids of Giza",
+        },
+        {
+          src: "/helena-reaching-shaft-of-light-egyptian-temple-hieroglyphics-portrait.jpeg",
+          alt: "Helena reaching toward shaft of light in Egyptian temple with hieroglyphics",
+          portrait: true,
+        },
+      ]}
+      columns={4}
+      variant="masonry"
+    />
+
+    <div class="reveal mt-12 text-center">
+      <p
+        class="font-heading text-gold-glow font-medium"
+        style="font-size: clamp(1.25rem, 2.5vw, 1.75rem);"
+      >
+        Over 200 pilgrims. 12 sacred journeys. One unbroken thread.
+      </p>
+    </div>
+  </div>
+</section>

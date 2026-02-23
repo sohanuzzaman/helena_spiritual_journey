@@ -1,0 +1,93 @@
+---
+import SectionHeader from "../SectionHeader.astro";
+import ImageGallery from "../ImageGallery.astro";
+import QuoteBlock from "../QuoteBlock.astro";
+---
+
+<section
+  class="relative bg-depth py-16 md:py-24 lg:py-32 overflow-hidden"
+  aria-labelledby="ceremony-title"
+>
+  <!-- Atmospheric radial gradient dome -->
+  <div
+    class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_center,_rgba(156,39,176,0.15)_0%,_rgba(255,215,0,0.05)_40%,_transparent_70%)]"
+    aria-hidden="true"
+  >
+  </div>
+
+  <div class="relative z-[1] max-w-[1200px] mx-auto px-6">
+    <div class="reveal">
+      <SectionHeader
+        label="Ceremony & Practice"
+        title="What happens inside the circle"
+        id="ceremony-title"
+      />
+    </div>
+
+    <div class="reveal mb-12 max-w-[680px] mx-auto text-center">
+      <p>
+        Sound healing with crystal bowls and ancient drums. Rose petal offerings
+        on sacred ground. Rituals drawn from lineages that have never been
+        broken. These are not performances — they are portals. And inside the
+        circle, every woman becomes both witness and vessel.
+      </p>
+    </div>
+
+    <ImageGallery
+      images={[
+        {
+          src: "/women-white-ceremony-gold-chalice-sea-cave-sunset-portrait.jpeg",
+          alt: "Women in white performing ceremony with gold chalice in sea cave at sunset",
+          portrait: true,
+        },
+        {
+          src: "/women-white-robes-ocean-sunset-ritual-drum-altar-landscape.jpg",
+          alt: "Women in white robes at ocean sunset ritual with drum altar",
+        },
+        {
+          src: "/women-circle-floral-mandala-beach-sand-aerial-landscape.jpg",
+          alt: "Women forming circle around floral mandala on beach sand, aerial view",
+        },
+        {
+          src: "/helena-floral-dress-rose-petals-ceremony-women-cappadocia-portrait.jpeg",
+          alt: "Helena in floral dress with rose petals during ceremony in Cappadocia",
+          portrait: true,
+        },
+        {
+          src: "/women-group-ceremony-egyptian-temple-hieroglyphics-landscape.jpeg",
+          alt: "Women group ceremony inside Egyptian temple with hieroglyphics",
+        },
+        {
+          src: "/helena-cream-fringed-dress-frame-drum-beach-rocks-portrait.jpg",
+          alt: "Helena in cream fringed dress playing frame drum on beach rocks",
+          portrait: true,
+        },
+        {
+          src: "/helena-man-frame-drums-waterfall-bali-jungle-portrait.jpg",
+          alt: "Helena and man playing frame drums at waterfall in Bali jungle",
+          portrait: true,
+        },
+        {
+          src: "/women-white-sitting-beach-sand-gold-vase-drum-portrait.jpeg",
+          alt: "Women in white sitting on beach sand with gold vase and drum",
+          portrait: true,
+        },
+        {
+          src: "/women-group-beach-sand-gold-vessel-drum-rocky-cliff-landscape.jpeg",
+          alt: "Women group on beach sand with gold vessel and drum by rocky cliff",
+        },
+        {
+          src: "/helena-young-girl-embrace-egyptian-temple-doorway-portrait.jpeg",
+          alt: "Helena embracing young girl in Egyptian temple doorway",
+          portrait: true,
+        },
+      ]}
+      columns={3}
+      variant="masonry"
+    />
+
+    <div class="reveal mt-8">
+      <QuoteBlock quote="We do not perform ceremony. We become it." />
+    </div>
+  </div>
+</section>
