@@ -78,5 +78,15 @@ const { href, text, animated = false, external = true } = Astro.props;
       50%  { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
+
+    .cta-button:focus-visible {
+      outline: none;
+      animation: cta-focus-pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes cta-focus-pulse {
+      0%, 100% { box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.4), 0 0 25px rgba(255, 215, 0, 0.4), 0 4px 20px rgba(106, 27, 154, 0.6); }
+      50%      { box-shadow: 0 0 0 3px rgba(255, 215, 0, 1), 0 0 25px rgba(255, 215, 0, 0.4), 0 4px 20px rgba(106, 27, 154, 0.6); }
+    }
   }
 </style>

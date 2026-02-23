@@ -65,6 +65,10 @@ import '../styles/global.css';
           (entries) => {
             entries.forEach((entry) => {
               if (entry.isIntersecting) {
+                const delay = entry.target.getAttribute('data-reveal-delay');
+                if (delay !== null) {
+                  (entry.target as HTMLElement).style.transitionDelay = `${parseInt(delay) * 100}ms`;
+                }
                 entry.target.classList.add('is-visible');
                 observer.unobserve(entry.target);
               }

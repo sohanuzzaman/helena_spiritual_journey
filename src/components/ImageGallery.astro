@@ -17,8 +17,8 @@ const colClass = `image-gallery--${columns}col`;
 ---
 
 <div class:list={['image-gallery', `image-gallery--${variant}`, colClass]}>
-  {images.map((img) => (
-    <div class:list={['image-gallery__item', 'reveal', { 'image-gallery__item--portrait': img.portrait }]}>
+  {images.map((img, i) => (
+    <div class:list={['image-gallery__item', 'reveal', { 'image-gallery__item--portrait': img.portrait }]} data-reveal-delay={i}>
       <div class="image-treated">
         <img
           src={img.src}

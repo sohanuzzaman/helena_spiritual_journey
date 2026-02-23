@@ -10,7 +10,7 @@ const { image1, image2, layout = 'equal', aspectRatio = '4/5' } = Astro.props;
 ---
 
 <div class:list={['image-pair', `image-pair--${layout}`]}>
-  <div class="image-pair__item reveal" style={`aspect-ratio: ${aspectRatio}`}>
+  <div class="image-pair__item reveal" data-reveal-delay="0" style={`aspect-ratio: ${aspectRatio}`}>
     <div class="image-treated">
       <img
         src={image1.src}
@@ -21,7 +21,7 @@ const { image1, image2, layout = 'equal', aspectRatio = '4/5' } = Astro.props;
       />
     </div>
   </div>
-  <div class="image-pair__item reveal" style={`aspect-ratio: ${aspectRatio}`}>
+  <div class="image-pair__item reveal" data-reveal-delay="1" style={`aspect-ratio: ${aspectRatio}`}>
     <div class="image-treated">
       <img
         src={image2.src}
