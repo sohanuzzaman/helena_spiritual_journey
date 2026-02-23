@@ -1,20 +1,41 @@
 ---
-import CTAButton from '../CTAButton.astro';
+import CTAButton from "../CTAButton.astro";
 ---
 
-<section class="relative bg-abyss py-16 md:py-24 lg:py-32 overflow-hidden" aria-labelledby="final-cta-title">
-  <!-- Atmospheric radial gradient dome -->
-  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_center,_rgba(107,63,160,0.06)_0%,_transparent_60%)]" aria-hidden="true"></div>
+<section
+  class="relative bg-abyss py-16 md:py-24 lg:py-32 overflow-hidden"
+  aria-labelledby="final-cta-title"
+>
+  <!-- Atmospheric radial gradient dome - Lemurian Final Glow -->
+  <div
+    class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_center,_rgba(255,215,0,0.08)_0%,_rgba(156,39,176,0.12)_40%,_transparent_70%)]"
+    aria-hidden="true"
+  >
+  </div>
 
-  <!-- Ambient gold glow orb behind CTA -->
-  <div class="glow-orb w-[350px] h-[350px] bg-gold-solar/10 bottom-1/4 left-1/2 -translate-x-1/2" aria-hidden="true"></div>
+  <!-- Ambient gold & purple glow orbs behind CTA -->
+  <div
+    class="glow-orb w-[500px] h-[500px] bg-gold-solar/15 bottom-1/4 left-1/2 -translate-x-1/2"
+    aria-hidden="true"
+  >
+  </div>
+  <div
+    class="glow-orb w-[400px] h-[400px] bg-purple-orchid/20 bottom-1/8 left-1/2 -translate-x-1/4"
+    aria-hidden="true"
+  >
+  </div>
 
   <div class="relative z-[1] max-w-[680px] mx-auto px-6 text-center">
     <div class="reveal">
-      <p class="font-accent font-medium text-[0.875rem] tracking-[0.2em] uppercase text-gold-solar mb-4">
+      <p
+        class="font-accent font-medium text-[0.875rem] tracking-[0.2em] uppercase text-gold-solar mb-4"
+      >
         Begin
       </p>
-      <h2 id="final-cta-title" class="font-heading font-medium text-pearl-white mb-6">
+      <h2
+        id="final-cta-title"
+        class="font-heading font-medium text-pearl-white mb-6"
+      >
         The journey begins in March.
       </h2>
       <div class="section-divider mb-10" aria-hidden="true"></div>
@@ -22,7 +43,9 @@ import CTAButton from '../CTAButton.astro';
 
     <div class="reveal">
       <p class="mb-6">
-        Subscribe to my private Instagram to receive every moment of this sacred pilgrimage — the rituals, the reflections, the ancient wisdom rising from the earth.
+        Subscribe to my private Instagram to receive every moment of this sacred
+        pilgrimage — the rituals, the reflections, the ancient wisdom rising
+        from the earth.
       </p>
       <p class="text-gold-glow font-medium text-lg mb-10">
         $X/month — Cancel anytime.
@@ -30,7 +53,11 @@ import CTAButton from '../CTAButton.astro';
     </div>
 
     <div class="reveal">
-      <CTAButton href="https://www.instagram.com/" text="Subscribe on Instagram" animated={true} />
+      <CTAButton
+        href="https://www.instagram.com/"
+        text="Subscribe on Instagram"
+        animated={true}
+      />
     </div>
   </div>
 </section>

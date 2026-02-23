@@ -2,36 +2,37 @@
 
 /* ============================================================
    Design Tokens — mapped from DESIGN.md
+   Opulent Lemurian Temple Theme
    ============================================================ */
 
 @theme {
-  /* Gold Family */
-  --color-gold-solar: #F2C94C;
-  --color-gold-warm: #D4A843;
-  --color-gold-honey: #C4912A;
-  --color-gold-ancient: #8B6914;
-  --color-gold-glow: #F5D97E;
-  --color-gold-pale: #FBF0D1;
+  /* Gold Family - Lemurian */
+  --color-gold-solar: #FFD700;
+  --color-gold-warm: #E5C158;
+  --color-gold-honey: #D4AF37;
+  --color-gold-ancient: #AA7900;
+  --color-gold-glow: #FFF3CC;
+  --color-gold-pale: #FDF9E8;
 
-  /* Purple Family */
-  --color-purple-deep: #1A0A2E;
-  --color-purple-amethyst: #2D1B4E;
-  --color-purple-violet: #6B3FA0;
-  --color-purple-orchid: #9B6DCC;
-  --color-purple-lavender: #C9A8E8;
-  --color-purple-mist: #E8D5F5;
+  /* Purple Family - Lemurian */
+  --color-purple-deep: #120322;
+  --color-purple-amethyst: #2A0845;
+  --color-purple-violet: #6A1B9A;
+  --color-purple-orchid: #9C27B0;
+  --color-purple-lavender: #D1C4E9;
+  --color-purple-mist: #EDE7F6;
 
   /* Accent — Crystalline & Earth */
-  --color-crystal-blue: #4A90D9;
-  --color-crystal-teal: #3DB8A0;
-  --color-rose-quartz: #E8A0B4;
-  --color-pearl-white: #F5F0EB;
-  --color-moonstone: #D4CFC9;
+  --color-crystal-blue: #4DD0E1;
+  --color-crystal-teal: #00BCD4;
+  --color-rose-quartz: #F48FB1;
+  --color-pearl-white: #FDFBFA;
+  --color-moonstone: #E0E0E0;
 
   /* Backgrounds & Surfaces */
-  --color-abyss: #0D0618;
+  --color-abyss: #0B0014;
   --color-depth: #1A0A2E;
-  --color-surface: #231445;
+  --color-surface: #2E154D;
 
   /* Font families */
   --font-heading: 'Cormorant Garamond', 'Playfair Display', Georgia, 'Times New Roman', serif;
@@ -44,36 +45,36 @@
    ============================================================ */
 
 :root {
-  --bg-glass: rgba(45, 27, 78, 0.6);
+  --bg-glass: rgba(42, 8, 69, 0.45);
 
   --gradient-gold-shimmer: linear-gradient(
     135deg,
-    #C4912A 0%,
-    #F2C94C 25%,
-    #F5D97E 50%,
-    #F2C94C 75%,
-    #C4912A 100%
+    #D4AF37 0%,
+    #FFD700 25%,
+    #FFF3CC 50%,
+    #FFD700 75%,
+    #D4AF37 100%
   );
 
   --gradient-purple-depth: linear-gradient(
     180deg,
     #1A0A2E 0%,
-    #0D0618 100%
+    #0B0014 100%
   );
 
   --gradient-divider: linear-gradient(
     90deg,
     transparent 0%,
-    #6B3FA0 20%,
-    #F2C94C 50%,
-    #6B3FA0 80%,
+    #9C27B0 20%,
+    #FFD700 50%,
+    #9C27B0 80%,
     transparent 100%
   );
 
   --gradient-gold-purple: linear-gradient(
     135deg,
-    #F2C94C 0%,
-    #9B6DCC 100%
+    #FFD700 0%,
+    #6A1B9A 100%
   );
 }
 
@@ -100,30 +101,39 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     color: var(--color-pearl-white);
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.15);
   }
 
   h1 {
-    font-weight: 500;
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 600;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
     line-height: 1.15;
+    text-shadow: 0 0 30px rgba(255, 215, 0, 0.25), 0 0 10px rgba(156, 39, 176, 0.3);
   }
 
   h2 {
     font-weight: 500;
-    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+    font-size: clamp(1.75rem, 3.5vw, 2.75rem);
     line-height: 1.2;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
   }
 
   h3 {
     font-weight: 600;
-    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    font-size: clamp(1.25rem, 2.5vw, 1.85rem);
     line-height: 1.3;
   }
 
   a {
-    color: var(--color-crystal-blue);
+    color: var(--color-gold-warm);
     text-decoration: underline;
     text-underline-offset: 3px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  a:hover {
+    color: var(--color-gold-solar);
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
   }
 
   :focus-visible {
@@ -132,7 +142,7 @@
     border-radius: 4px;
   }
 
-  /* Noise texture overlay */
+  /* Noise & texture overlay for magical temple feel */
   body::after {
     content: '';
     position: fixed;
@@ -140,7 +150,8 @@
     background-image: url('/textures/noise.png');
     background-repeat: repeat;
     background-size: 200px 200px;
-    opacity: 0.025;
+    opacity: 0.04;
+    mix-blend-mode: overlay;
     pointer-events: none;
     z-index: 9999;
   }
@@ -151,41 +162,64 @@
    ============================================================ */
 
 @layer components {
-  /* Gold gradient text (hero headline) */
+  /* Gold gradient text (hero headline) with opulent glow */
   .text-gold-gradient {
     background: var(--gradient-gold-shimmer);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 12px rgba(255, 215, 0, 0.4)) drop-shadow(0 0 2px rgba(255, 255, 255, 0.5));
   }
 
-  /* Section divider */
+  /* Section divider - Thicker and more glowing for Lemuria feel */
   .section-divider {
-    width: clamp(200px, 30vw, 400px);
-    height: 1px;
+    width: clamp(250px, 40vw, 500px);
+    height: 2px;
     margin-inline: auto;
     background: var(--gradient-divider);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5), 0 0 30px rgba(156, 39, 176, 0.4);
+    border-radius: 50%;
   }
 
-  /* Glass morphism card */
+  /* Glass morphism card - Opulent Temple Glass */
   .glass-card {
     background: var(--bg-glass);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(107, 63, 160, 0.3);
-    border-radius: 12px;
-    padding: 1.5rem;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-top: 1px solid rgba(255, 215, 0, 0.4);
+    border-bottom: 1px solid rgba(156, 39, 176, 0.3);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 
+      inset 0 0 20px rgba(156, 39, 176, 0.1),
+      0 8px 32px rgba(11, 0, 20, 0.6),
+      0 0 15px rgba(255, 215, 0, 0.05);
+    position: relative;
+    overflow: hidden;
   }
 
-  /* Image treatment */
+  .glass-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 50%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.05), transparent);
+    transform: skewX(-20deg);
+    animation: luxurious-shine 10s infinite;
+  }
+
+  /* Image treatment - Mythical Glow */
   .image-treated {
     position: relative;
-    border-radius: 8px;
+    border-radius: 12px;
     box-shadow:
-      0 0 30px rgba(242, 201, 76, 0.15),
-      0 8px 32px rgba(0, 0, 0, 0.4);
-    filter: saturate(1.05) contrast(1.02);
+      0 0 40px rgba(156, 39, 176, 0.2),
+      0 0 20px rgba(255, 215, 0, 0.15),
+      0 12px 40px rgba(0, 0, 0, 0.6);
+    filter: saturate(1.15) contrast(1.05) sepia(0.1) hue-rotate(-5deg);
     overflow: hidden;
+    border: 1px solid rgba(255, 215, 0, 0.2);
   }
 
   /* Golden vignette overlay on treated images */
@@ -193,18 +227,20 @@
     content: '';
     position: absolute;
     inset: 0;
-    border-radius: 8px;
-    background: radial-gradient(ellipse at center, transparent 50%, rgba(139, 105, 20, 0.2) 100%);
+    border-radius: 12px;
+    background: radial-gradient(ellipse at center, transparent 40%, rgba(106, 27, 154, 0.3) 100%);
+    box-shadow: inset 0 0 30px rgba(255, 215, 0, 0.15);
     pointer-events: none;
   }
 
-  /* Ambient glow orbs — light filtering through deep water */
+  /* Ambient glow orbs — Mystical Energy fields */
   .glow-orb {
     position: absolute;
     border-radius: 50%;
-    filter: blur(80px);
+    filter: blur(100px);
     pointer-events: none;
     z-index: 0;
+    mix-blend-mode: screen;
   }
 }
 
@@ -215,13 +251,13 @@
 @media (prefers-reduced-motion: no-preference) {
   .reveal {
     opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transform: translateY(40px) scale(0.98);
+    transition: opacity 1s cubic-bezier(0.2, 0.8, 0.2, 1), transform 1s cubic-bezier(0.2, 0.8, 0.2, 1);
   }
 
   .reveal.is-visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
 
   @keyframes shimmer {
@@ -230,23 +266,29 @@
     100% { background-position: 0% 50%; }
   }
 
+  @keyframes luxurious-shine {
+    0%   { left: -100%; opacity: 0; }
+    20%  { left: 200%; opacity: 1; }
+    100% { left: 200%; opacity: 0; }
+  }
+
   @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50%      { transform: translateY(-10px); }
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50%      { transform: translateY(-15px) rotate(1deg); }
   }
 
   @keyframes breathe {
-    0%, 100% { opacity: 0.3; }
-    50%      { opacity: 0.6; }
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50%      { opacity: 0.7; transform: scale(1.05); }
   }
 
   .section-divider {
-    animation: breathe-divider 6s ease-in-out infinite;
+    animation: breathe-divider 8s ease-in-out infinite;
   }
 
   @keyframes breathe-divider {
-    0%, 100% { opacity: 0.5; }
-    50%      { opacity: 1; }
+    0%, 100% { opacity: 0.6; filter: hue-rotate(0deg); }
+    50%      { opacity: 1; filter: hue-rotate(15deg) drop-shadow(0 0 10px rgba(255,215,0,0.8)); }
   }
 }
 

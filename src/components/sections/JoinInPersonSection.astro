@@ -1,20 +1,33 @@
 ---
-import SectionHeader from '../SectionHeader.astro';
-import CTAButton from '../CTAButton.astro';
+import SectionHeader from "../SectionHeader.astro";
+import CTAButton from "../CTAButton.astro";
 ---
 
-<section class="relative bg-depth py-16 md:py-24 lg:py-32 overflow-hidden" aria-labelledby="join-title">
-  <!-- Atmospheric radial gradient dome -->
-  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_center,_rgba(107,63,160,0.06)_0%,_transparent_60%)]" aria-hidden="true"></div>
+<section
+  class="relative bg-depth py-16 md:py-24 lg:py-32 overflow-hidden"
+  aria-labelledby="join-title"
+>
+  <!-- Atmospheric radial gradient dome - Deep Lemurian Glow -->
+  <div
+    class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_center,_rgba(255,215,0,0.1)_0%,_rgba(156,39,176,0.1)_40%,_transparent_70%)]"
+    aria-hidden="true"
+  >
+  </div>
 
   <div class="relative z-[1] max-w-[680px] mx-auto px-6">
     <div class="reveal">
-      <SectionHeader label="Walk With Me" title="Some paths are meant to be walked together" id="join-title" />
+      <SectionHeader
+        label="Walk With Me"
+        title="Some paths are meant to be walked together"
+        id="join-title"
+      />
     </div>
 
     <div class="reveal space-y-6">
       <p>
-        On select pilgrimages, a small number of souls will be invited to walk alongside me. To stand on the sacred ground. To participate in ceremony. To feel the earth beneath your feet, not through a screen.
+        On select pilgrimages, a small number of souls will be invited to walk
+        alongside me. To stand on the sacred ground. To participate in ceremony.
+        To feel the earth beneath your feet, not through a screen.
       </p>
 
       <p>
@@ -22,7 +35,8 @@ import CTAButton from '../CTAButton.astro';
       </p>
 
       <p>
-        If this calls to you, subscribing is the first step. All in-person journey invitations are shared inside the circle first.
+        If this calls to you, subscribing is the first step. All in-person
+        journey invitations are shared inside the circle first.
       </p>
     </div>
 
@@ -39,7 +53,10 @@ import CTAButton from '../CTAButton.astro';
     </div>
 
     <div class="reveal mt-12 text-center">
-      <CTAButton href="https://www.instagram.com/" text="Subscribe on Instagram" />
+      <CTAButton
+        href="https://www.instagram.com/"
+        text="Subscribe on Instagram"
+      />
     </div>
   </div>
 </section>

@@ -1,19 +1,34 @@
 ---
-import SectionHeader from '../SectionHeader.astro';
-import FeatureCard from '../FeatureCard.astro';
-import QuoteBlock from '../QuoteBlock.astro';
+import SectionHeader from "../SectionHeader.astro";
+import FeatureCard from "../FeatureCard.astro";
+import QuoteBlock from "../QuoteBlock.astro";
 ---
 
-<section class="relative bg-abyss py-16 md:py-24 lg:py-32 overflow-hidden" aria-labelledby="sacred-circle-title">
-  <!-- Atmospheric radial gradient dome -->
-  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_center,_rgba(107,63,160,0.08)_0%,_transparent_60%)]" aria-hidden="true"></div>
+<section
+  class="relative bg-abyss py-16 md:py-24 lg:py-32 overflow-hidden"
+  aria-labelledby="sacred-circle-title"
+>
+  <!-- Atmospheric radial gradient dome - Lemurian Amethyst -->
+  <div
+    class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_center,_rgba(156,39,176,0.12)_0%,_rgba(255,215,0,0.05)_50%,_transparent_80%)]"
+    aria-hidden="true"
+  >
+  </div>
 
   <!-- Ambient purple glow orb behind card grid -->
-  <div class="glow-orb w-[500px] h-[500px] bg-purple-violet/[0.08] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" aria-hidden="true"></div>
+  <div
+    class="glow-orb w-[600px] h-[600px] bg-purple-violet/[0.15] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+    aria-hidden="true"
+  >
+  </div>
 
   <div class="relative z-[1] max-w-[960px] mx-auto px-6">
     <div class="reveal">
-      <SectionHeader label="Sacred Circle" title="Inside the sacred circle" id="sacred-circle-title" />
+      <SectionHeader
+        label="Sacred Circle"
+        title="Inside the sacred circle"
+        id="sacred-circle-title"
+      />
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
@@ -44,7 +59,9 @@ import QuoteBlock from '../QuoteBlock.astro';
     </div>
 
     <div class="reveal">
-      <QuoteBlock quote="This is not content. This is a transmission. A thread connecting you to the places where the earth still speaks." />
+      <QuoteBlock
+        quote="This is not content. This is a transmission. A thread connecting you to the places where the earth still speaks."
+      />
     </div>
   </div>
 </section>
