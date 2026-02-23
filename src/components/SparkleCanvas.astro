@@ -1,15 +1,21 @@
 ---
-
 ---
 
-<canvas id="sparkle-canvas" class="particle-canvas fixed inset-0 z-[1] pointer-events-none" aria-hidden="true"></canvas>
+<canvas
+  id="sparkle-canvas"
+  class="particle-canvas fixed inset-0 z-[1] pointer-events-none"
+  aria-hidden="true"></canvas>
 
 <script>
-  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const prefersReducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
 
   if (!prefersReducedMotion) {
-    const canvas = document.getElementById('sparkle-canvas') as HTMLCanvasElement;
-    const ctx = canvas.getContext('2d');
+    const canvas = document.getElementById(
+      "sparkle-canvas"
+    ) as HTMLCanvasElement;
+    const ctx = canvas.getContext("2d");
 
     if (ctx) {
       let width = window.innerWidth;
@@ -19,7 +25,7 @@
 
       const isMobile = width < 768;
       const PARTICLE_COUNT = isMobile ? 20 : 40;
-      const GOLD_GLOW = '#F5D97E';
+      const GOLD_GLOW = "#F5D97E";
 
       interface Particle {
         x: number;
@@ -56,9 +62,25 @@
         };
       }
 
-      const particles: Particle[] = Array.from({ length: PARTICLE_COUNT }, createParticle);
+      const particles: Particle[] = Array.from(
+        { length: PARTICLE_COUNT },
+        createParticle
+      );
 
       let lastTime = performance.now();
+      let mouseX = width / 2;
+      let mouseY = height / 2;
+      let isInteracting = false;
+
+      window.addEventListener("mousemove", (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        isInteracting = true;
+      });
+
+      window.addEventListener("mouseout", () => {
+        isInteracting = false;
+      });
 
       function animate(now: number) {
         const dt = now - lastTime;
@@ -74,7 +96,8 @@
           if (p.life < p.fadeInDuration) {
             p.opacity = (p.life / p.fadeInDuration) * p.maxOpacity;
           } else if (p.life > p.maxLife - p.fadeOutDuration) {
-            p.opacity = ((p.maxLife - p.life) / p.fadeOutDuration) * p.maxOpacity;
+            p.opacity =
+              ((p.maxLife - p.life) / p.fadeOutDuration) * p.maxOpacity;
           } else {
             p.opacity = p.maxOpacity;
           }
@@ -84,6 +107,17 @@
           p.phase += p.driftSpeed * (dt / 1000);
           p.drift = Math.sin(p.phase) * 20;
 
+          // Mouse subtle repel
+          let dx = p.x + p.drift - mouseX;
+          let dy = p.y - mouseY;
+          let distance = Math.sqrt(dx * dx + dy * dy);
+
+          if (isInteracting && distance < 150) {
+            let force = (150 - distance) / 150;
+            p.x += (dx / distance) * force * 1.5;
+            p.y += (dy / distance) * force * 1.5;
+          }
+
           // Draw
           ctx!.beginPath();
           ctx!.arc(p.x + p.drift, p.y, p.size, 0, Math.PI * 2);
@@ -92,7 +126,12 @@
           ctx!.fill();
 
           // Recycle
-          if (p.life >= p.maxLife || p.y < -10) {
+          if (
+            p.life >= p.maxLife ||
+            p.y < -10 ||
+            p.x < -50 ||
+            p.x > width + 50
+          ) {
             particles[i] = createParticle();
           }
         }
@@ -103,7 +142,7 @@
 
       requestAnimationFrame(animate);
 
-      window.addEventListener('resize', () => {
+      window.addEventListener("resize", () => {
         width = window.innerWidth;
         height = window.innerHeight;
         canvas.width = width;
