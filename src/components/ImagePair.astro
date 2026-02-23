@@ -3,31 +3,32 @@ interface Props {
   image1: { src: string; alt: string };
   image2: { src: string; alt: string };
   layout?: 'equal' | 'hero-accent';
+  aspectRatio?: string;
 }
 
-const { image1, image2, layout = 'equal' } = Astro.props;
+const { image1, image2, layout = 'equal', aspectRatio = '4/5' } = Astro.props;
 ---
 
 <div class:list={['image-pair', `image-pair--${layout}`]}>
-  <div class="image-pair__item reveal">
+  <div class="image-pair__item reveal" style={`aspect-ratio: ${aspectRatio}`}>
     <div class="image-treated">
       <img
         src={image1.src}
         alt={image1.alt}
         loading="lazy"
         decoding="async"
-        class="w-full h-auto block rounded-lg"
+        class="w-full h-full object-cover block rounded-lg"
       />
     </div>
   </div>
-  <div class="image-pair__item reveal">
+  <div class="image-pair__item reveal" style={`aspect-ratio: ${aspectRatio}`}>
     <div class="image-treated">
       <img
         src={image2.src}
         alt={image2.alt}
         loading="lazy"
         decoding="async"
-        class="w-full h-auto block rounded-lg"
+        class="w-full h-full object-cover block rounded-lg"
       />
     </div>
   </div>
@@ -38,6 +39,10 @@ const { image1, image2, layout = 'equal' } = Astro.props;
     display: grid;
     gap: 1.5rem;
     grid-template-columns: 1fr;
+  }
+
+  .image-pair__item .image-treated {
+    height: 100%;
   }
 
   @media (min-width: 768px) {

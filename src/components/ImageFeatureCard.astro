@@ -9,7 +9,7 @@ interface Props {
 const { title, description, imageSrc, imageAlt = '' } = Astro.props;
 ---
 
-<div class:list={['feature-card', 'glass-card', 'border-l-[3px]', 'border-l-gold-solar', { 'feature-card--with-image': !!imageSrc }]}>
+<div class:list={['feature-card', 'glass-card', 'border-l-[3px]', 'border-l-gold-solar', 'h-full', { 'feature-card--with-image': !!imageSrc }]}>
   {imageSrc && (
     <div class="feature-card__thumb">
       <img

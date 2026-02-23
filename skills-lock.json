@@ -11,6 +11,11 @@
       "sourceType": "github",
       "computedHash": "39b7a636c7e254a2f08dee43db6b9f6faf6723de999a6bbce2eb5ac95a130207"
     },
+    "interaction-design": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "computedHash": "05088780c348108baaabdaf55c672a7967c2a82c4843c259343141f91a0da55a"
+    },
     "seo-audit": {
       "source": "coreyhaines31/marketingskills",
       "sourceType": "github",
