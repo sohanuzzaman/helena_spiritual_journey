@@ -4,11 +4,13 @@ import SectionHeader from '../components/SectionHeader.astro';
 import CTAButton from '../components/CTAButton.astro';
 import { getLocaleFromUrl } from '../i18n/ui';
 import { t } from '../i18n/ui';
-import { fetchTranslations } from '../i18n/uilm';
+import type { Locale } from '../i18n/ui';
+import en from '../i18n/translations/en.json';
+import cs from '../i18n/translations/cs.json';
 
 const locale = getLocaleFromUrl(Astro.url);
-const skipCache = Astro.url.searchParams.has("nocache");
-const tr = await fetchTranslations(locale, { skipCache });
+const translations: Record<Locale, Record<string, string>> = { en, cs };
+const tr = translations[locale];
 ---
 
 <BaseLayout
@@ -16,6 +18,8 @@ const tr = await fetchTranslations(locale, { skipCache });
   lang={locale}
   skipToContent={t(tr, "SKIP_TO_CONTENT")}
   footerCopyright={t(tr, "FOOTER_COPYRIGHT")}
+  skipToContentKey="SKIP_TO_CONTENT"
+  footerCopyrightKey="FOOTER_COPYRIGHT"
 >
   <section class="relative min-h-screen flex items-center justify-center bg-abyss overflow-hidden">
     <!-- Atmospheric gradient overlay -->
@@ -30,11 +34,23 @@ const tr = await fetchTranslations(locale, { skipCache });
 
     <!-- Content -->
     <div class="relative z-10 max-w-[680px] mx-auto px-6 text-center">
-      <SectionHeader label={t(tr, "ERROR_404_LABEL")} title={t(tr, "ERROR_404_TITLE")} tag="h1" />
-      <p class="font-body text-lg text-moonstone/80 mb-10 leading-relaxed">
+      <SectionHeader
+        label={t(tr, "ERROR_404_LABEL")}
+        labelKey="ERROR_404_LABEL"
+        title={t(tr, "ERROR_404_TITLE")}
+        titleKey="ERROR_404_TITLE"
+        tag="h1"
+      />
+      <p class="font-body text-lg text-moonstone/80 mb-10 leading-relaxed" data-t="ERROR_404_MESSAGE">
         {t(tr, "ERROR_404_MESSAGE")}
       </p>
-      <CTAButton href={`/${locale}/`} text={t(tr, "ERROR_404_CTA")} animated external={false} />
+      <CTAButton
+        href={`/${locale}/`}
+        text={t(tr, "ERROR_404_CTA")}
+        textKey="ERROR_404_CTA"
+        animated
+        external={false}
+      />
     </div>
   </section>
 </BaseLayout>

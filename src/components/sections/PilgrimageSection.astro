@@ -8,9 +8,14 @@ interface Props {
   body1: string;
   body2: string;
   body3: string;
+  labelKey?: string;
+  titleKey?: string;
+  body1Key?: string;
+  body2Key?: string;
+  body3Key?: string;
 }
 
-const { label, title, body1, body2, body3 } = Astro.props;
+const { label, title, body1, body2, body3, labelKey, titleKey, body1Key, body2Key, body3Key } = Astro.props;
 ---
 
 <section
@@ -30,13 +35,15 @@ const { label, title, body1, body2, body3 } = Astro.props;
         label={label}
         title={title}
         id="pilgrimage-title"
+        labelKey={labelKey}
+        titleKey={titleKey}
       />
     </div>
 
     <div class="reveal space-y-6">
-      <p>{body1}</p>
-      <p>{body2}</p>
-      <p>{body3}</p>
+      <p {...(body1Key ? { "data-t": body1Key } : {})}>{body1}</p>
+      <p {...(body2Key ? { "data-t": body2Key } : {})}>{body2}</p>
+      <p {...(body3Key ? { "data-t": body3Key } : {})}>{body3}</p>
     </div>
 
     <div class="reveal mt-12">

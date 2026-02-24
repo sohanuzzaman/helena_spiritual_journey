@@ -7,9 +7,14 @@ interface Props {
   body: string;
   price: string;
   ctaText: string;
+  labelKey?: string;
+  titleKey?: string;
+  bodyKey?: string;
+  priceKey?: string;
+  ctaTextKey?: string;
 }
 
-const { label, title, body, price, ctaText } = Astro.props;
+const { label, title, body, price, ctaText, labelKey, titleKey, bodyKey, priceKey, ctaTextKey } = Astro.props;
 ---
 
 <section
@@ -39,12 +44,14 @@ const { label, title, body, price, ctaText } = Astro.props;
     <div class="reveal">
       <p
         class="font-accent font-medium text-[0.875rem] tracking-[0.2em] uppercase text-gold-solar mb-4"
+        {...(labelKey ? { "data-t": labelKey } : {})}
       >
         {label}
       </p>
       <h2
         id="final-cta-title"
         class="font-heading font-medium text-pearl-white mb-6"
+        {...(titleKey ? { "data-t": titleKey } : {})}
       >
         {title}
       </h2>
@@ -52,8 +59,8 @@ const { label, title, body, price, ctaText } = Astro.props;
     </div>
 
     <div class="reveal">
-      <p class="mb-6">{body}</p>
-      <p class="text-gold-glow font-medium text-lg mb-10">
+      <p class="mb-6" {...(bodyKey ? { "data-t": bodyKey } : {})}>{body}</p>
+      <p class="text-gold-glow font-medium text-lg mb-10" {...(priceKey ? { "data-t": priceKey } : {})}>
         {price}
       </p>
     </div>
@@ -63,6 +70,7 @@ const { label, title, body, price, ctaText } = Astro.props;
         href="https://www.instagram.com/"
         text={ctaText}
         animated={true}
+        textKey={ctaTextKey}
       />
     </div>
   </div>

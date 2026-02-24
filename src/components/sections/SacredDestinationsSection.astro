@@ -18,6 +18,21 @@ interface Props {
   istanbulName: string;
   istanbulTagline: string;
   istanbulDesc: string;
+  labelKey?: string;
+  titleKey?: string;
+  introKey?: string;
+  egyptNameKey?: string;
+  egyptTaglineKey?: string;
+  egyptDescKey?: string;
+  cappadociaNameKey?: string;
+  cappadociaTaglineKey?: string;
+  cappadociaDescKey?: string;
+  baliNameKey?: string;
+  baliTaglineKey?: string;
+  baliDescKey?: string;
+  istanbulNameKey?: string;
+  istanbulTaglineKey?: string;
+  istanbulDescKey?: string;
 }
 
 const {
@@ -26,6 +41,11 @@ const {
   cappadociaName, cappadociaTagline, cappadociaDesc,
   baliName, baliTagline, baliDesc,
   istanbulName, istanbulTagline, istanbulDesc,
+  labelKey, titleKey, introKey,
+  egyptNameKey, egyptTaglineKey, egyptDescKey,
+  cappadociaNameKey, cappadociaTaglineKey, cappadociaDescKey,
+  baliNameKey, baliTaglineKey, baliDescKey,
+  istanbulNameKey, istanbulTaglineKey, istanbulDescKey,
 } = Astro.props;
 ---
 
@@ -53,11 +73,13 @@ const {
         label={label}
         title={title}
         id="destinations-title"
+        labelKey={labelKey}
+        titleKey={titleKey}
       />
     </div>
 
     <div class="reveal mb-12 max-w-[680px] mx-auto text-center">
-      <p>{intro}</p>
+      <p {...(introKey ? { "data-t": introKey } : {})}>{intro}</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -74,6 +96,9 @@ const {
             src: "/helena-reaching-shaft-of-light-egyptian-temple-hieroglyphics-portrait.jpeg",
             alt: "Helena in pink robe in namaste pose before the Great Sphinx",
           }}
+          nameKey={egyptNameKey}
+          taglineKey={egyptTaglineKey}
+          descKey={egyptDescKey}
         />
       </div>
       <div class="reveal">
@@ -89,6 +114,9 @@ const {
             src: "/helena-pink-dress-ancient-cave-rock-formation-cappadocia-portrait.jpeg",
             alt: "Helena in pink dress at ancient cave rock formation in Cappadocia",
           }}
+          nameKey={cappadociaNameKey}
+          taglineKey={cappadociaTaglineKey}
+          descKey={cappadociaDescKey}
         />
       </div>
       <div class="reveal">
@@ -104,6 +132,9 @@ const {
             src: "/helena-white-dress-crystal-singing-bowl-waterfall-bali-portrait.jpg",
             alt: "Helena with crystal singing bowl near waterfall in Bali",
           }}
+          nameKey={baliNameKey}
+          taglineKey={baliTaglineKey}
+          descKey={baliDescKey}
         />
       </div>
       <div class="reveal">
@@ -119,6 +150,9 @@ const {
             src: "/ancient-rock-art-petroglyphs-red-stone-cliff-portrait.jpeg",
             alt: "Ancient rock art petroglyphs on red stone cliff",
           }}
+          nameKey={istanbulNameKey}
+          taglineKey={istanbulTaglineKey}
+          descKey={istanbulDescKey}
         />
       </div>
     </div>

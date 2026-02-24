@@ -10,9 +10,15 @@ interface Props {
   body2: string;
   body3: string;
   ctaText: string;
+  labelKey?: string;
+  titleKey?: string;
+  body1Key?: string;
+  body2Key?: string;
+  body3Key?: string;
+  ctaTextKey?: string;
 }
 
-const { label, title, body1, body2, body3, ctaText } = Astro.props;
+const { label, title, body1, body2, body3, ctaText, labelKey, titleKey, body1Key, body2Key, body3Key, ctaTextKey } = Astro.props;
 ---
 
 <section
@@ -32,13 +38,15 @@ const { label, title, body1, body2, body3, ctaText } = Astro.props;
         label={label}
         title={title}
         id="join-title"
+        labelKey={labelKey}
+        titleKey={titleKey}
       />
     </div>
 
     <div class="reveal space-y-6">
-      <p>{body1}</p>
-      <p>{body2}</p>
-      <p>{body3}</p>
+      <p {...(body1Key ? { "data-t": body1Key } : {})}>{body1}</p>
+      <p {...(body2Key ? { "data-t": body2Key } : {})}>{body2}</p>
+      <p {...(body3Key ? { "data-t": body3Key } : {})}>{body3}</p>
     </div>
 
     <div class="reveal mt-12">
@@ -71,6 +79,7 @@ const { label, title, body1, body2, body3, ctaText } = Astro.props;
       <CTAButton
         href="https://www.instagram.com/"
         text={ctaText}
+        textKey={ctaTextKey}
       />
     </div>
   </div>

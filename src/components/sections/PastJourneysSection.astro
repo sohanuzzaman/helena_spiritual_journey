@@ -7,9 +7,13 @@ interface Props {
   title: string;
   body: string;
   stat: string;
+  labelKey?: string;
+  titleKey?: string;
+  bodyKey?: string;
+  statKey?: string;
 }
 
-const { label, title, body, stat } = Astro.props;
+const { label, title, body, stat, labelKey, titleKey, bodyKey, statKey } = Astro.props;
 ---
 
 <section
@@ -29,11 +33,13 @@ const { label, title, body, stat } = Astro.props;
         label={label}
         title={title}
         id="past-journeys-title"
+        labelKey={labelKey}
+        titleKey={titleKey}
       />
     </div>
 
     <div class="reveal mb-12 max-w-[680px] mx-auto text-center">
-      <p>{body}</p>
+      <p {...(bodyKey ? { "data-t": bodyKey } : {})}>{body}</p>
     </div>
 
     <ImageGallery
@@ -129,6 +135,7 @@ const { label, title, body, stat } = Astro.props;
       <p
         class="font-heading text-gold-glow font-medium"
         style="font-size: clamp(1.25rem, 2.5vw, 1.75rem);"
+        {...(statKey ? { "data-t": statKey } : {})}
       >
         {stat}
       </p>

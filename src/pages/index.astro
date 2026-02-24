@@ -1,5 +1,36 @@
 ---
-// Fallback redirect — middleware handles the primary language detection
-// (cookie → Cloudflare geo → Accept-Language → default).
-return Astro.redirect("/en/");
+// Static index page — detects language client-side and redirects
 ---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Redirecting…</title>
+    <noscript><meta http-equiv="refresh" content="0;url=/en/" /></noscript>
+    <script is:inline>
+      (function () {
+        var supported = ["en", "cs"];
+        var lang = "en";
+
+        // 1. Check lang_pref cookie
+        var match = document.cookie.match(/(?:^|;\s*)lang_pref=(\w+)/);
+        if (match && supported.indexOf(match[1]) !== -1) {
+          lang = match[1];
+        } else {
+          // 2. Check navigator.language
+          var navLang = (navigator.language || "").split("-")[0].toLowerCase();
+          if (supported.indexOf(navLang) !== -1) {
+            lang = navLang;
+          }
+        }
+
+        window.location.replace("/" + lang + "/");
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Redirecting…</p>
+  </body>
+</html>

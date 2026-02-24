@@ -8,9 +8,13 @@ interface Props {
   title: string;
   body: string;
   quote: string;
+  labelKey?: string;
+  titleKey?: string;
+  bodyKey?: string;
+  quoteKey?: string;
 }
 
-const { label, title, body, quote } = Astro.props;
+const { label, title, body, quote, labelKey, titleKey, bodyKey, quoteKey } = Astro.props;
 ---
 
 <section
@@ -30,11 +34,13 @@ const { label, title, body, quote } = Astro.props;
         label={label}
         title={title}
         id="ceremony-title"
+        labelKey={labelKey}
+        titleKey={titleKey}
       />
     </div>
 
     <div class="reveal mb-12 max-w-[680px] mx-auto text-center">
-      <p>{body}</p>
+      <p {...(bodyKey ? { "data-t": bodyKey } : {})}>{body}</p>
     </div>
 
     <ImageGallery
@@ -91,7 +97,7 @@ const { label, title, body, quote } = Astro.props;
     />
 
     <div class="reveal mt-8">
-      <QuoteBlock quote={quote} />
+      <QuoteBlock quote={quote} quoteKey={quoteKey} />
     </div>
   </div>
 </section>

@@ -15,6 +15,17 @@ interface Props {
   card4Title: string;
   card4Desc: string;
   quote: string;
+  labelKey?: string;
+  titleKey?: string;
+  card1TitleKey?: string;
+  card1DescKey?: string;
+  card2TitleKey?: string;
+  card2DescKey?: string;
+  card3TitleKey?: string;
+  card3DescKey?: string;
+  card4TitleKey?: string;
+  card4DescKey?: string;
+  quoteKey?: string;
 }
 
 const {
@@ -24,6 +35,12 @@ const {
   card3Title, card3Desc,
   card4Title, card4Desc,
   quote,
+  labelKey, titleKey,
+  card1TitleKey, card1DescKey,
+  card2TitleKey, card2DescKey,
+  card3TitleKey, card3DescKey,
+  card4TitleKey, card4DescKey,
+  quoteKey,
 } = Astro.props;
 ---
 
@@ -51,6 +68,8 @@ const {
         label={label}
         title={title}
         id="sacred-circle-title"
+        labelKey={labelKey}
+        titleKey={titleKey}
       />
     </div>
 
@@ -61,6 +80,8 @@ const {
           description={card1Desc}
           imageSrc="/helena-pink-robe-namaste-pose-great-sphinx-giza-portrait.jpeg"
           imageAlt="Helena reaching toward shaft of light in Egyptian temple"
+          titleKey={card1TitleKey}
+          descKey={card1DescKey}
         />
       </div>
       <div class="reveal">
@@ -69,6 +90,8 @@ const {
           description={card2Desc}
           imageSrc="/helena-red-sandstone-cave-meditation-singing-bowl-flowers-portrait.jpeg"
           imageAlt="Helena meditating with singing bowl in red sandstone cave"
+          titleKey={card2TitleKey}
+          descKey={card2DescKey}
         />
       </div>
       <div class="reveal">
@@ -77,6 +100,8 @@ const {
           description={card3Desc}
           imageSrc="/helena-floral-dress-eroded-sandstone-rock-formation-cappadocia-portrait.jpeg"
           imageAlt="Helena in floral dress at eroded sandstone rock formation in Cappadocia"
+          titleKey={card3TitleKey}
+          descKey={card3DescKey}
         />
       </div>
       <div class="reveal">
@@ -85,6 +110,8 @@ const {
           description={card4Desc}
           imageSrc="/spiritual-group-guided-tour-philae-temple-egypt-landscape.jpeg"
           imageAlt="Spiritual group guided tour at Philae Temple in Egypt"
+          titleKey={card4TitleKey}
+          descKey={card4DescKey}
         />
       </div>
     </div>
@@ -92,6 +119,7 @@ const {
     <div class="reveal">
       <QuoteBlock
         quote={quote}
+        quoteKey={quoteKey}
       />
     </div>
   </div>
