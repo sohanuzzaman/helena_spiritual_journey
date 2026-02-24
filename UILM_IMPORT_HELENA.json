@@ -1,0 +1,1446 @@
+[
+  {
+    "_id": "05fe5102-6570-420c-928a-545f2a167b26",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "META_PAGE_TITLE",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Helena Houdova — Sacred Pilgrimage Journey | Subscribe",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Helena Houdová — Posvátná poutʼ | Přihlásit se",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "770d834d-7cf3-4562-8da3-7069a6b039b8",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "META_PAGE_DESCRIPTION",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Follow Helena Houdova’s pilgrimage to the world’s most sacred sites. Subscribe for intimate access to ceremonies, transmissions, and ancient wisdom — with select opportunities to join in person.",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Sledujte poutʼ Heleny Houdové na nejposvátnější místa světa. Přihlaste se k intimnímu přístupu k ceremoniím, přenosu a prastaré moudrosti — s možností osobní účasti.",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "5b763f4b-919f-4e48-9c2a-25287c60af59",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "SKIP_TO_CONTENT",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Skip to content",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Přeskočit na obsah",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "db97ee16-3222-4712-9910-0c76b0a61ab1",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "FOOTER_COPYRIGHT",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Helena Houdova. All rights reserved.",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Helena Houdová. Všechna práva vyhrazena.",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "717b1a26-53e9-4119-8fa2-dd0f0c17f63a",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "HERO_LABEL",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Sacred Pilgrimage",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Posvátná poutʼ",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "eca0d88e-21b6-47f2-ae7c-7f61cb323326",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "HERO_HEADLINE",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Walk the sacred path with me.",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Pojď se mnou po posvátné cestě.",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "7b19d128-db13-49d5-91c9-398aa5363ca8",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "HERO_SUBHEADLINE",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "I’m traveling to the temples, vortexes, and ancient sites that hold the memory of the earth — and I’m opening a window for you to witness it all. A private journey, shared through a sacred circle on Instagram.",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Cestuji k chrámům, vortexům a prastarým místům, která uchovají paměť země — a otevírám okno, abyste to všechno mohli vidět. Soukromá cesta sdílená skrze posvátný kruh na Instagramu.",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "d6423b78-5716-4b94-a090-507e163ff6bd",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "PILGRIMAGE_LABEL",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "The Pilgrimage",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Poutʼ",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "24e86766-6d76-46df-8acd-3019d6ed81b2",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "PILGRIMAGE_TITLE",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Where the earth remembers",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Kde si země pamatuje",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "f1dc7dba-4656-4add-b565-ff7d2760918a",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "PILGRIMAGE_BODY_1",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "This is not a vacation. This is a pilgrimage — a devotion to the sacred places that have held ceremony, prayer, and healing for thousands of years.",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Toto není dovolená. Toto je poutʼ — oddanost posvátným místům, která uchovávají ceremonie, modlitby a uzdravování po tisíce let.",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "e228db77-eac5-46af-aa94-bc168a01e80b",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "PILGRIMAGE_BODY_2",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "From the temples of Egypt to ancient lands still waiting to be named, each site carries a frequency. A vibration. A message that can only be received by those who arrive with an open heart.",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Od chrámů Egypta po prastaré země, které stále čekají na pojmenování — každé místo nese frekvenci. Vibraci. Poselství, které může přijmout jen ten, kdo přichází s otevřeným srdcem.",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "d9fd61b3-c5a5-4d40-aacb-2fa22221bab9",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "PILGRIMAGE_BODY_3",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "I am going. And I want you to feel it with me.",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Já jdu. A chci, abyste to cítili se mnou.",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "35267fb2-6e65-4de7-aa70-f41688510f17",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "SACRED_CIRCLE_LABEL",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Sacred Circle",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Posvátný kruh",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "54029d69-aa84-4d04-9b9c-74ca162a30fe",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "SACRED_CIRCLE_TITLE",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Inside the sacred circle",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Uvnitř posvátného kruhu",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "a27fe44e-59c0-43ae-92bd-0cb3f940e50a",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "SACRED_CIRCLE_CARD_1_TITLE",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Unfiltered ceremony",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Nefiltrovaná ceremonie",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "0ac65349-46a1-4190-a7aa-3ee7744b9098",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "SACRED_CIRCLE_CARD_1_DESC",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Raw, intimate moments from rituals and sacred practices at each site",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Syrové, intimní okamžiky z rituálů a posvátných praktik na každém místě",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "56b1ec5a-2ef0-4a0a-b66c-efa958a1614b",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "SACRED_CIRCLE_CARD_2_TITLE",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Transmissions from the land",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Přenosy ze země",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "a0f08809-b4c8-42ff-a9a6-a51e0f850c9d",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "SACRED_CIRCLE_CARD_2_DESC",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "My reflections, downloads, and channeled insights as I walk the ancient paths",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Mé úvahy, stažené poznatky a channelované vhledy, jak kráčím po prastarých cestách",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "0d076759-312e-419b-bbd1-070eaf2b952b",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "SACRED_CIRCLE_CARD_3_TITLE",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Behind the veil",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Za závojem",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "15ad8628-d86a-469c-bef2-9481131a0c69",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "SACRED_CIRCLE_CARD_3_DESC",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "The preparation, the silence before ceremony, the moments between — what you never see on a public feed",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Příprava, ticho před ceremonií, okamžiky mezi — to, co nikdy nevidíte na veřejném profilu",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "da1bca24-66ef-4a4a-ba0d-9c7a52c1b3ed",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "SACRED_CIRCLE_CARD_4_TITLE",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "A living map",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Živá mapa",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "4125d629-585c-4525-82ba-33f81c46f76d",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "SACRED_CIRCLE_CARD_4_DESC",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Follow the pilgrimage in real time as it unfolds across continents",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Sledujte poutʼ v reálném čase, jak se odvíjí napříč kontinenty",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "37514219-d620-42c0-ac71-96dcb6767e44",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "SACRED_CIRCLE_QUOTE",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "This is not content. This is a transmission. A thread connecting you to the places where the earth still speaks.",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Toto není obsah. Toto je přenos. Nit spojující vás s místy, kde země stále promlouvá.",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "9c8b1283-4fb6-408a-b3ea-f7da0e43fcc9",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "CONSCIOUSNESS_LABEL",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "The Frequency",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Frekvence",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "4025f965-0e93-4fe8-b3b2-80d2a796b585",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "CONSCIOUSNESS_TITLE",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Consciousness is not created. It is received.",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Vědomí není vytvářeno. Je přijímáno.",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "4be0cc66-648e-4ddf-abaf-45a536357ab7",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "CONSCIOUSNESS_BODY_1",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "We have been taught that consciousness is a product of the brain — a mechanical spark born from matter. But the ancient builders knew differently. They understood that awareness is a signal, downloaded from the ether, received through the plasma field that connects all living things.",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Byli jsme učeni, že vědomí je produktem mozku — mechanickou jiskrou zrozenou z hmoty. Ale prastarí stavitelé věděli jinak. Chápali, že uvědomění je signál, stažený z éteru, přijatý skrze plazmové pole, které spojuje všechny živé bytosti.",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "0afaa612-902c-49b2-86f9-b2c05e6b9266",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "CONSCIOUSNESS_BODY_2",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "The sacred sites are not monuments to the past. They are antennae — nodes in a living network that still transmits. When you stand inside a temple, a cave, a stone circle, your body becomes a crystal tuning fork, vibrating in resonance with frequencies the modern world has forgotten.",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Posvátná místa nejsou památníky minulosti. Jsou to antény — uzly v živé síti, která stále vysílá. Když stojíte uvnitř chrámu, jeskyně, kamenného kruhu, vaše tělo se stává křišťálovou ladičkou, vibrující v rezonanci s frekvencemi, na které moderní svět zapomněl.",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "63b252e2-87a0-4f39-a622-db6fd9b5a06b",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "CONSCIOUSNESS_BODY_3",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "This pilgrimage is not about visiting places. It is about remembering how to receive.",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Tato poutʼ není o navštěvování míst. Je o vzpomínání, jak přijímat.",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "68f81f08-a32f-4e4c-94a7-8ecca247adbe",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "CONSCIOUSNESS_QUOTE",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "The temples were not built to worship. They were built to receive.",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Chrámy nebyly postaveny k uctívání. Byly postaveny k příjmu.",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "5c207a85-1f58-488b-87bb-0304d4e70bcd",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "DESTINATIONS_LABEL",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Sacred Ground",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Posvátná země",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "ebe6be1f-5cde-49a9-bee9-256c8f618bcb",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "DESTINATIONS_TITLE",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Where the earth still speaks",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Kde země stále promlouvá",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "1475837f-d0bf-440c-8c9a-92c2774b4ae4",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "DESTINATIONS_INTRO",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Each destination on this pilgrimage was chosen not for its beauty — though beauty is inevitable — but for its frequency. These are places where the veil is thin, where the land itself holds memory, and where the body begins to remember what the mind has forgotten.",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Každá destinace na této pouti byla vybrána nikoliv pro svou krásu — ačkoli krása je nevyhnutelná — ale pro svou frekvenci. Toto jsou místa, kde je závoj tenký, kde země sama uchovává paměť a kde tělo začíná vzpomínat na to, co mysl zapomněla.",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "7dde056f-3cb0-4dd5-af24-ab66a1dac088",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "DEST_EGYPT_NAME",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Egypt",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Egypt",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "f0b35ef1-e107-4782-a357-a8ec91376b3c",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "DEST_EGYPT_TAGLINE",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "The motherland of mystery",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Mateřská země tajemství",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "a6e2c2e7-cfdf-4bc7-8ea4-8fd56d0857ce",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "DEST_EGYPT_DESC",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Pyramids, temples, and tombs that still pulse with the energy of initiates who walked these halls thousands of years before us.",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Pyramidy, chrámy a hrobky, které stále pulzují energií zasvěcenců, kteří těmito sály kráčeli před tisíci lety.",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "1d88545b-1aae-4a05-8b73-6d65ad0ef0ba",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "DEST_CAPPADOCIA_NAME",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Cappadocia",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Kappadokie",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "780d7f8a-45c3-4401-9d67-b97889b2496c",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "DEST_CAPPADOCIA_TAGLINE",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Carved by wind and worship",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Vytesaná větrem a modlitbou",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "d545c464-7162-4ec1-9d18-3b8db088e6bd",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "DEST_CAPPADOCIA_DESC",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Underground cities and rock-cut churches where early mystics retreated into the earth to find the divine.",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Podzemní města a skalí kostely, kde se raní mystici uchýlili do země, aby nalezli božské.",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "663f28e9-edfe-4025-a0d4-124bde0ca905",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "DEST_BALI_NAME",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Bali",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Bali",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "28198655-d495-45e9-a63d-e7604cd58ec0",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "DEST_BALI_TAGLINE",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "The island of living ceremony",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Ostrov živé ceremonie",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "6b9887cc-f49a-4638-8204-c10593fc64b3",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "DEST_BALI_DESC",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Waterfalls, temples, and jungle sanctuaries where daily offerings keep the doorway between worlds open.",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Vodopády, chrámy a džunglové svaté háje, kde každodenní obětiny udržují bránu mezi světy otevřenou.",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "aaf4cfc5-7b1c-4181-b35f-08bf8dfd4149",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "DEST_ISTANBUL_NAME",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Istanbul",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Istanbul",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "e3092e40-dd8e-428f-b08e-cca6f07c5fb7",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "DEST_ISTANBUL_TAGLINE",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Where empires prayed",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Kde se říše modlily",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "97dbc212-c152-456e-8564-c59d52342d5c",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "DEST_ISTANBUL_DESC",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Byzantine cisterns and ancient crossroads where East meets West beneath centuries of sacred architecture.",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Byzantské cisterny a prastaré křižovatky, kde se Východ setkává se Západem pod stoletími posvátné architektury.",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "888f9462-97f3-408d-890b-98e056d3387f",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "CEREMONY_LABEL",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Ceremony & Practice",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Ceremonie a praxe",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "b7fb8580-3cfb-4e23-98f0-3fe8aa6607eb",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "CEREMONY_TITLE",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "What happens inside the circle",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Co se děje uvnitř kruhu",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "f5eeb363-1cc0-45c2-87b5-26b0320360f9",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "CEREMONY_BODY",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Sound healing with crystal bowls and ancient drums. Rose petal offerings on sacred ground. Rituals drawn from lineages that have never been broken. These are not performances — they are portals. And inside the circle, every woman becomes both witness and vessel.",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Zvukové léčení křišťálovými miskami a prastarými bubny. Obětiny z růžových lístků na posvátné zemi. Rituály čerpající z linií, které nebyly nikdy přerušeny. Toto nejsou představení — jsou to portály. A uvnitř kruhu se každá žena stává svědkyni i nádobou.",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "ecaf99cd-1fd1-4587-977c-95e6c3fe0aec",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "CEREMONY_QUOTE",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "We do not perform ceremony. We become it.",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Ceremonie se neprovádí. Stáváme se jí.",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "c8dddd60-35d1-45d2-b9fa-59f7a0aa4d6f",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "PAST_JOURNEYS_LABEL",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Past Journeys",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Minulé cesty",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "cdddd391-e386-4c92-813c-e9e2cf079ea0",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "PAST_JOURNEYS_TITLE",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "The circles that came before",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Kruhy, které přišly předtím",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "3bf61e31-db37-4e9e-b46f-2149b11c0f66",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "PAST_JOURNEYS_BODY",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Every pilgrimage leaves a mark — not just on the land, but on the women who walk it. These are the faces, the places, and the moments from journeys that changed us forever.",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Každá poutʼ zanechá stopu — nejen na zemi, ale na ženách, které jí kráčejí. Toto jsou tváře, místa a okamžiky z cest, které nás navždy změnily.",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "8fc52db2-baaa-429f-8412-f9104affc939",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "PAST_JOURNEYS_STAT",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Over 200 pilgrims. 12 sacred journeys. One unbroken thread.",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Přes 200 poutníků. 12 posvátných cest. Jedna nepřetržitá nit.",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "09470a5e-72ae-405e-a427-cd063fc9980c",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "MONTHLY_CIRCLE_LABEL",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Monthly Circle",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Měsíční kruh",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "20385cb9-0e5f-497b-84cd-d43faba25434",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "MONTHLY_CIRCLE_TITLE",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "The journey continues between journeys",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Cesta pokračuje mezi cestami",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "a25980f8-9385-4068-94a1-19a01ccd790e",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "MONTHLY_CIRCLE_BODY_1",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "The pilgrimage does not end when you leave the sacred site. Once a month, we gather on Zoom — a living circle of women who have felt the frequency and want to stay connected to it. These calls are a space for sharing upgrades, downloads, and the subtle shifts that continue long after the journey ends.",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Poutʼ nekončí, když opustíte posvátné místo. Jednou za měsíc se shromáždíme na Zoomu — živý kruh žen, které pocítily frekvenci a chtějí zůstat napojeny. Tato setkavání jsou prostorem pro sdílení upgradů, downloadů a jemných změn, které pokračují dlouho po skončení cesty.",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "d433f85a-3cc4-4220-b516-01d8cdbc8c85",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "MONTHLY_CIRCLE_BODY_2",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Monthly circle access is included for all Instagram subscribers. Zoom links are shared inside the sacred circle.",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Přístup k měsíčnímu kruhu je zahrnut pro všechny předplatitele na Instagramu. Odkazy na Zoom jsou sdíleny uvnitř posvátného kruhu.",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "72d844de-5509-4268-a5b8-60c757071186",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "MONTHLY_CIRCLE_CARD_1_TITLE",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Live Transmissions",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Živé přenosy",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "09a71d50-6da5-4f73-bd70-458605acaa91",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "MONTHLY_CIRCLE_CARD_1_DESC",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Monthly channeled insights, energy readings, and frequency activations shared live with the circle",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Měsíční channelované vhledy, energetická čtení a frekvenční aktivace sdílené živě s kruhem",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "191adba6-0531-4d5c-8ba3-616ed5becbb2",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "MONTHLY_CIRCLE_CARD_2_TITLE",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Community Witness",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Svědectví komunity",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "e3f92306-f318-4185-a185-dc8105eaf3dd",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "MONTHLY_CIRCLE_CARD_2_DESC",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "A safe space to share your shifts, breakthroughs, and questions with women who understand the path",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Bezpečný prostor pro sdílení vašich posunů, průlomů a otázek se ženami, které rozumí cestě",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "c20e0db5-cc32-4b58-a7e2-9aeb901672f0",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "MONTHLY_CIRCLE_CARD_3_TITLE",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Ongoing Guidance",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Průběžné vedení",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "48e6fffe-13ca-4164-abbb-21a78b7d177c",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "MONTHLY_CIRCLE_CARD_3_DESC",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Integration support and spiritual direction between pilgrimages to keep your practice alive",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Podpora integrace a duchovní vedení mezi poutěmi, aby vaše praxe zůstala živá",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "629fe3e1-f71b-4165-bcf7-ad0dfa92ed6f",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "JOIN_LABEL",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Walk With Me",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Pojď se mnou",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "5778b2a0-62bc-4dd4-8d08-4280dec3d15c",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "JOIN_TITLE",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Some paths are meant to be walked together",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Některé cesty jsou určeny k tomu, aby se šly společně",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "564f9806-099d-4b90-85ab-c23a3af2ac83",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "JOIN_BODY_1",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "On select pilgrimages, a small number of souls will be invited to walk alongside me. To stand on the sacred ground. To participate in ceremony. To feel the earth beneath your feet, not through a screen.",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Na vybraných poutích bude malý počet duší pozván, aby kráčely po mém boku. Stát na posvátné zemi. Účastnit se ceremonií. Cítit zemi pod nohama, ne skrze obrazovku.",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "2e721916-f37d-40db-a16f-a97f85e78043",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "JOIN_BODY_2",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "These are intimate gatherings — limited by intention, not by numbers.",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Toto jsou intimní setkání — omezená záměrem, ne počty.",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "b04d0ef4-8dcc-4891-b766-d4c6f73b3737",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "JOIN_BODY_3",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "If this calls to you, subscribing is the first step. All in-person journey invitations are shared inside the circle first.",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Pokud vás to volá, předplacení je první krok. Všechny pozvánky na osobní cesty jsou sdíleny nejprve uvnitř kruhu.",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "af91ea35-2650-4541-9f32-dfa7e08a20ef",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "FINAL_CTA_LABEL",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Begin",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Začátek",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "dcb89ec1-1b63-41a2-afca-1b85b3d1b329",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "FINAL_CTA_TITLE",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "The journey begins in March.",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Cesta začíná v březnu.",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "609c10c8-c801-493f-86c1-aad78881ba7d",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "FINAL_CTA_BODY",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Subscribe to my sacred circle on Instagram and receive every moment of this pilgrimage — the ceremonies, the transmissions, the ancient frequencies rising from the earth. Plus monthly Zoom circles to stay connected between journeys.",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Přihlaste se k mému posvátnému kruhu na Instagramu a přijměte každý okamžik této pouti — ceremonie, přenosy, prastaré frekvence stoupající ze země. Plus měsíční Zoom kruhy pro spojení mezi cestami.",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "b73d484e-7c77-4034-a603-3e133cd9784d",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "FINAL_CTA_PRICE",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "$9.99/month — Cancel anytime.",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "9,99 $/měsíc — Zrušit kdykoli.",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "c1d8a6cc-a31f-42b9-9a2b-94a14cb9ab97",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "ERROR_404_LABEL",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "404",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "404",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "5af593a2-a2e9-4bb1-a0e0-4f39ef3a9b49",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "ERROR_404_TITLE",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Page Not Found",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Stránka nenalezena",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "11345168-71ff-4c43-93dc-e041c6459816",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "ERROR_404_MESSAGE",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "The path you seek has not yet been revealed. Return to the beginning and continue your journey.",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Cesta, kterou hledáte, ještě nebyla odhalena. Vraťte se na začátek a pokračujte ve své cestě.",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "00167eff-3d8d-4f04-9944-b708f8f138f8",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "ERROR_404_CTA",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Return Home",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Zpět domů",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  },
+  {
+    "_id": "8221c941-57fb-45c7-a618-b8f75ca11a7c",
+    "TenantId": "f080a1bea04280a72149fd689d50a48c",
+    "KeyName": "CTA_SUBSCRIBE",
+    "ModuleId": "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value": null,
+    "Resources": [
+      {
+        "Value": "Subscribe on Instagram",
+        "Culture": "en-US"
+      },
+      {
+        "Value": "Přihlásit se na Instagramu",
+        "Culture": "cs-CZ"
+      }
+    ],
+    "Routes": [],
+    "IsPartiallyTranslated": true
+  }
+]

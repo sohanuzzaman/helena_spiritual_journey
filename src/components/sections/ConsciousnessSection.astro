@@ -2,6 +2,17 @@
 import SectionHeader from "../SectionHeader.astro";
 import ImagePair from "../ImagePair.astro";
 import QuoteBlock from "../QuoteBlock.astro";
+
+interface Props {
+  label: string;
+  title: string;
+  body1: string;
+  body2: string;
+  body3: string;
+  quote: string;
+}
+
+const { label, title, body1, body2, body3, quote } = Astro.props;
 ---
 
 <section
@@ -25,8 +36,8 @@ import QuoteBlock from "../QuoteBlock.astro";
   <div class="relative z-[1] max-w-[680px] mx-auto px-6">
     <div class="reveal">
       <SectionHeader
-        label="The Frequency"
-        title="Consciousness is not created. It is received."
+        label={label}
+        title={title}
         id="consciousness-title"
       />
     </div>
@@ -44,25 +55,9 @@ import QuoteBlock from "../QuoteBlock.astro";
     </div>
 
     <div class="reveal space-y-6 mt-12">
-      <p>
-        We have been taught that consciousness is a product of the brain — a
-        mechanical spark born from matter. But the ancient builders knew
-        differently. They understood that awareness is a signal, downloaded from
-        the ether, received through the plasma field that connects all living
-        things.
-      </p>
-
-      <p>
-        The sacred sites are not monuments to the past. They are antennae —
-        nodes in a living network that still transmits. When you stand inside a
-        temple, a cave, a stone circle, your body becomes a crystal tuning fork,
-        vibrating in resonance with frequencies the modern world has forgotten.
-      </p>
-
-      <p>
-        This pilgrimage is not about visiting places. It is about remembering
-        how to receive.
-      </p>
+      <p>{body1}</p>
+      <p>{body2}</p>
+      <p>{body3}</p>
     </div>
 
     <div class="reveal mt-12">
@@ -80,7 +75,7 @@ import QuoteBlock from "../QuoteBlock.astro";
     </div>
 
     <div class="reveal">
-      <QuoteBlock quote="The temples were not built to worship. They were built to receive." />
+      <QuoteBlock quote={quote} />
     </div>
   </div>
 </section>

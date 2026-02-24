@@ -3,6 +3,28 @@ import SectionHeader from "../SectionHeader.astro";
 import FeatureCard from "../FeatureCard.astro";
 import ImagePair from "../ImagePair.astro";
 import CTAButton from "../CTAButton.astro";
+
+interface Props {
+  label: string;
+  title: string;
+  body1: string;
+  body2: string;
+  card1Title: string;
+  card1Desc: string;
+  card2Title: string;
+  card2Desc: string;
+  card3Title: string;
+  card3Desc: string;
+  ctaText: string;
+}
+
+const {
+  label, title, body1, body2,
+  card1Title, card1Desc,
+  card2Title, card2Desc,
+  card3Title, card3Desc,
+  ctaText,
+} = Astro.props;
 ---
 
 <section
@@ -26,44 +48,34 @@ import CTAButton from "../CTAButton.astro";
   <div class="relative z-[1] max-w-[960px] mx-auto px-6">
     <div class="reveal">
       <SectionHeader
-        label="Monthly Circle"
-        title="The journey continues between journeys"
+        label={label}
+        title={title}
         id="monthly-circle-title"
       />
     </div>
 
     <div class="reveal space-y-6 max-w-[680px] mx-auto mb-12">
-      <p>
-        The pilgrimage does not end when you leave the sacred site. Once a
-        month, we gather on Zoom — a living circle of women who have felt the
-        frequency and want to stay connected to it. These calls are a space for
-        sharing upgrades, downloads, and the subtle shifts that continue long
-        after the journey ends.
-      </p>
-
-      <p>
-        Monthly circle access is included for all Instagram subscribers. Zoom
-        links are shared inside the sacred circle.
-      </p>
+      <p>{body1}</p>
+      <p>{body2}</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
       <div class="reveal">
         <FeatureCard
-          title="Live Transmissions"
-          description="Monthly channeled insights, energy readings, and frequency activations shared live with the circle"
+          title={card1Title}
+          description={card1Desc}
         />
       </div>
       <div class="reveal">
         <FeatureCard
-          title="Community Witness"
-          description="A safe space to share your shifts, breakthroughs, and questions with women who understand the path"
+          title={card2Title}
+          description={card2Desc}
         />
       </div>
       <div class="reveal">
         <FeatureCard
-          title="Ongoing Guidance"
-          description="Integration support and spiritual direction between pilgrimages to keep your practice alive"
+          title={card3Title}
+          description={card3Desc}
         />
       </div>
     </div>
@@ -97,7 +109,7 @@ import CTAButton from "../CTAButton.astro";
     <div class="reveal mt-12 text-center">
       <CTAButton
         href="https://www.instagram.com/"
-        text="Subscribe on Instagram"
+        text={ctaText}
       />
     </div>
   </div>

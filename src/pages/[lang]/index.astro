@@ -1,0 +1,161 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import SparkleCanvas from "../../components/SparkleCanvas.astro";
+import SacredGeometry from "../../components/SacredGeometry.astro";
+import HeroSection from "../../components/sections/HeroSection.astro";
+import PilgrimageSection from "../../components/sections/PilgrimageSection.astro";
+import CrystalInterlude from "../../components/sections/CrystalInterlude.astro";
+import SacredCircleSection from "../../components/sections/SacredCircleSection.astro";
+import ConsciousnessSection from "../../components/sections/ConsciousnessSection.astro";
+import SacredDestinationsSection from "../../components/sections/SacredDestinationsSection.astro";
+import CeremonySection from "../../components/sections/CeremonySection.astro";
+import PastJourneysSection from "../../components/sections/PastJourneysSection.astro";
+import MonthlyCircleSection from "../../components/sections/MonthlyCircleSection.astro";
+import JoinInPersonSection from "../../components/sections/JoinInPersonSection.astro";
+import FinalCTASection from "../../components/sections/FinalCTASection.astro";
+import { locales, type Locale } from "../../i18n/ui";
+import { t } from "../../i18n/ui";
+import { fetchTranslations } from "../../i18n/uilm";
+
+const lang = Astro.params.lang as Locale;
+
+if (!locales.includes(lang)) {
+  return Astro.redirect("/en/");
+}
+
+const skipCache = Astro.url.searchParams.has("nocache");
+const tr = await fetchTranslations(lang, { skipCache });
+---
+
+<BaseLayout
+  title={t(tr, "META_PAGE_TITLE")}
+  description={t(tr, "META_PAGE_DESCRIPTION")}
+  lang={lang}
+  skipToContent={t(tr, "SKIP_TO_CONTENT")}
+  footerCopyright={t(tr, "FOOTER_COPYRIGHT")}
+>
+  <SacredGeometry />
+  <SparkleCanvas />
+
+  <HeroSection
+    label={t(tr, "HERO_LABEL")}
+    headline={t(tr, "HERO_HEADLINE")}
+    subheadline={t(tr, "HERO_SUBHEADLINE")}
+    ctaText={t(tr, "CTA_SUBSCRIBE")}
+  />
+
+  <PilgrimageSection
+    label={t(tr, "PILGRIMAGE_LABEL")}
+    title={t(tr, "PILGRIMAGE_TITLE")}
+    body1={t(tr, "PILGRIMAGE_BODY_1")}
+    body2={t(tr, "PILGRIMAGE_BODY_2")}
+    body3={t(tr, "PILGRIMAGE_BODY_3")}
+  />
+
+  <CrystalInterlude
+    imageSrc="/helena-white-dress-amethyst-crystal-ocean-beach.jpg"
+    objectPosition="center 35%"
+    blendTopColor="depth"
+    blendBottomColor="abyss"
+  />
+
+  <SacredCircleSection
+    label={t(tr, "SACRED_CIRCLE_LABEL")}
+    title={t(tr, "SACRED_CIRCLE_TITLE")}
+    card1Title={t(tr, "SACRED_CIRCLE_CARD_1_TITLE")}
+    card1Desc={t(tr, "SACRED_CIRCLE_CARD_1_DESC")}
+    card2Title={t(tr, "SACRED_CIRCLE_CARD_2_TITLE")}
+    card2Desc={t(tr, "SACRED_CIRCLE_CARD_2_DESC")}
+    card3Title={t(tr, "SACRED_CIRCLE_CARD_3_TITLE")}
+    card3Desc={t(tr, "SACRED_CIRCLE_CARD_3_DESC")}
+    card4Title={t(tr, "SACRED_CIRCLE_CARD_4_TITLE")}
+    card4Desc={t(tr, "SACRED_CIRCLE_CARD_4_DESC")}
+    quote={t(tr, "SACRED_CIRCLE_QUOTE")}
+  />
+
+  <ConsciousnessSection
+    label={t(tr, "CONSCIOUSNESS_LABEL")}
+    title={t(tr, "CONSCIOUSNESS_TITLE")}
+    body1={t(tr, "CONSCIOUSNESS_BODY_1")}
+    body2={t(tr, "CONSCIOUSNESS_BODY_2")}
+    body3={t(tr, "CONSCIOUSNESS_BODY_3")}
+    quote={t(tr, "CONSCIOUSNESS_QUOTE")}
+  />
+
+  <CrystalInterlude
+    imageSrc="/helena-white-flowing-dress-dancing-great-pyramid-giza-portrait.jpg"
+    objectPosition="center 20%"
+    blendTopColor="depth"
+    blendBottomColor="abyss"
+  />
+
+  <SacredDestinationsSection
+    label={t(tr, "DESTINATIONS_LABEL")}
+    title={t(tr, "DESTINATIONS_TITLE")}
+    intro={t(tr, "DESTINATIONS_INTRO")}
+    egyptName={t(tr, "DEST_EGYPT_NAME")}
+    egyptTagline={t(tr, "DEST_EGYPT_TAGLINE")}
+    egyptDesc={t(tr, "DEST_EGYPT_DESC")}
+    cappadociaName={t(tr, "DEST_CAPPADOCIA_NAME")}
+    cappadociaTagline={t(tr, "DEST_CAPPADOCIA_TAGLINE")}
+    cappadociaDesc={t(tr, "DEST_CAPPADOCIA_DESC")}
+    baliName={t(tr, "DEST_BALI_NAME")}
+    baliTagline={t(tr, "DEST_BALI_TAGLINE")}
+    baliDesc={t(tr, "DEST_BALI_DESC")}
+    istanbulName={t(tr, "DEST_ISTANBUL_NAME")}
+    istanbulTagline={t(tr, "DEST_ISTANBUL_TAGLINE")}
+    istanbulDesc={t(tr, "DEST_ISTANBUL_DESC")}
+  />
+
+  <CeremonySection
+    label={t(tr, "CEREMONY_LABEL")}
+    title={t(tr, "CEREMONY_TITLE")}
+    body={t(tr, "CEREMONY_BODY")}
+    quote={t(tr, "CEREMONY_QUOTE")}
+  />
+
+  <CrystalInterlude
+    imageSrc="/women-white-robes-ocean-sunset-ritual-drum-altar-landscape.jpg"
+    objectPosition="center center"
+    blendTopColor="depth"
+    blendBottomColor="abyss"
+  />
+
+  <PastJourneysSection
+    label={t(tr, "PAST_JOURNEYS_LABEL")}
+    title={t(tr, "PAST_JOURNEYS_TITLE")}
+    body={t(tr, "PAST_JOURNEYS_BODY")}
+    stat={t(tr, "PAST_JOURNEYS_STAT")}
+  />
+
+  <MonthlyCircleSection
+    label={t(tr, "MONTHLY_CIRCLE_LABEL")}
+    title={t(tr, "MONTHLY_CIRCLE_TITLE")}
+    body1={t(tr, "MONTHLY_CIRCLE_BODY_1")}
+    body2={t(tr, "MONTHLY_CIRCLE_BODY_2")}
+    card1Title={t(tr, "MONTHLY_CIRCLE_CARD_1_TITLE")}
+    card1Desc={t(tr, "MONTHLY_CIRCLE_CARD_1_DESC")}
+    card2Title={t(tr, "MONTHLY_CIRCLE_CARD_2_TITLE")}
+    card2Desc={t(tr, "MONTHLY_CIRCLE_CARD_2_DESC")}
+    card3Title={t(tr, "MONTHLY_CIRCLE_CARD_3_TITLE")}
+    card3Desc={t(tr, "MONTHLY_CIRCLE_CARD_3_DESC")}
+    ctaText={t(tr, "CTA_SUBSCRIBE")}
+  />
+
+  <JoinInPersonSection
+    label={t(tr, "JOIN_LABEL")}
+    title={t(tr, "JOIN_TITLE")}
+    body1={t(tr, "JOIN_BODY_1")}
+    body2={t(tr, "JOIN_BODY_2")}
+    body3={t(tr, "JOIN_BODY_3")}
+    ctaText={t(tr, "CTA_SUBSCRIBE")}
+  />
+
+  <FinalCTASection
+    label={t(tr, "FINAL_CTA_LABEL")}
+    title={t(tr, "FINAL_CTA_TITLE")}
+    body={t(tr, "FINAL_CTA_BODY")}
+    price={t(tr, "FINAL_CTA_PRICE")}
+    ctaText={t(tr, "CTA_SUBSCRIBE")}
+  />
+</BaseLayout>

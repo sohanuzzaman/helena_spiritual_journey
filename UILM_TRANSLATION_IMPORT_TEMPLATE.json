@@ -1,0 +1,52 @@
+[
+  {
+    "_id" : "6bbbef76-bad6-417d-b002-d7f1f5cdba36",
+    "TenantId" : "f080a1bea04280a72149fd689d50a48c",
+    "KeyName" : "EMAIL",
+    "ModuleId" : "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value" : null,
+    "Resources" : [
+        {
+            "Value" : "Email",
+            "Culture" : "en-US"
+        },
+        {
+            "Value" : "ইমেইল",
+            "Culture" : "bn-BD"
+        },
+        {
+            "Value" : "E-Mail.",
+            "Culture" : "de-DE"
+        }
+    ],
+    "Routes" : [
+
+    ],
+    "IsPartiallyTranslated" : true
+},
+{
+    "_id" : "fa4f27cb-dc72-4906-b7df-34422f1e191b",
+    "TenantId" : "f080a1bea04280a72149fd689d50a48c",
+    "KeyName" : "PASSWORD",
+    "ModuleId" : "25b40560-43b1-4263-88e7-407099e3b075",
+    "Value" : null,
+    "Resources" : [
+        {
+            "Value" : "Password",
+            "Culture" : "en-US"
+        },
+        {
+            "Value" : "পাসওয়ার্ড",
+            "Culture" : "bn-BD"
+        },
+        {
+            "Value" : "Passwort",
+            "Culture" : "de-DE"
+        }
+    ],
+    "Routes" : [
+
+    ],
+    "IsPartiallyTranslated" : true
+}
+]

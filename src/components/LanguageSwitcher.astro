@@ -1,0 +1,45 @@
+---
+import { locales, type Locale } from "../i18n/ui";
+
+interface Props {
+  currentLocale: Locale;
+}
+
+const { currentLocale } = Astro.props;
+
+const labels: Record<Locale, string> = {
+  en: "EN",
+  cs: "CS",
+};
+
+// Build the alternate locale URL by swapping the first path segment
+const currentPath = Astro.url.pathname;
+const pathParts = currentPath.split("/").filter(Boolean);
+const restOfPath = pathParts.length > 1 ? "/" + pathParts.slice(1).join("/") : "/";
+---
+
+<nav
+  class="fixed top-4 right-4 z-[9998] flex gap-1 rounded-full px-1 py-1"
+  style="background: rgba(42, 8, 69, 0.6); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 215, 0, 0.2);"
+  aria-label="Language"
+>
+  {locales.map((locale) => {
+    const isActive = locale === currentLocale;
+    const href = `/${locale}${restOfPath}`;
+    return (
+      <a
+        href={href}
+        class:list={[
+          "cta-button font-accent font-medium text-xs tracking-[0.15em] uppercase px-3 py-1.5 rounded-full transition-all duration-300",
+          isActive
+            ? "bg-gold-solar/20 text-gold-solar shadow-[0_0_10px_rgba(255,215,0,0.2)]"
+            : "text-moonstone/70 hover:text-gold-glow hover:bg-gold-solar/10",
+        ]}
+        aria-current={isActive ? "true" : undefined}
+        aria-label={locale === "en" ? "English" : "Čeština"}
+      >
+        {labels[locale]}
+      </a>
+    );
+  })}
+</nav>

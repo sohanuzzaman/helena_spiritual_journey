@@ -1,6 +1,15 @@
 ---
 import SectionHeader from "../SectionHeader.astro";
 import ImageGallery from "../ImageGallery.astro";
+
+interface Props {
+  label: string;
+  title: string;
+  body: string;
+  stat: string;
+}
+
+const { label, title, body, stat } = Astro.props;
 ---
 
 <section
@@ -17,18 +26,14 @@ import ImageGallery from "../ImageGallery.astro";
   <div class="relative z-[1] max-w-[1200px] mx-auto px-6">
     <div class="reveal">
       <SectionHeader
-        label="Past Journeys"
-        title="The circles that came before"
+        label={label}
+        title={title}
         id="past-journeys-title"
       />
     </div>
 
     <div class="reveal mb-12 max-w-[680px] mx-auto text-center">
-      <p>
-        Every pilgrimage leaves a mark — not just on the land, but on the women
-        who walk it. These are the faces, the places, and the moments from
-        journeys that changed us forever.
-      </p>
+      <p>{body}</p>
     </div>
 
     <ImageGallery
@@ -125,7 +130,7 @@ import ImageGallery from "../ImageGallery.astro";
         class="font-heading text-gold-glow font-medium"
         style="font-size: clamp(1.25rem, 2.5vw, 1.75rem);"
       >
-        Over 200 pilgrims. 12 sacred journeys. One unbroken thread.
+        {stat}
       </p>
     </div>
   </div>

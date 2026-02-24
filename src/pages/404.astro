@@ -2,9 +2,21 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import CTAButton from '../components/CTAButton.astro';
+import { getLocaleFromUrl } from '../i18n/ui';
+import { t } from '../i18n/ui';
+import { fetchTranslations } from '../i18n/uilm';
+
+const locale = getLocaleFromUrl(Astro.url);
+const skipCache = Astro.url.searchParams.has("nocache");
+const tr = await fetchTranslations(locale, { skipCache });
 ---
 
-<BaseLayout title="Page Not Found">
+<BaseLayout
+  title={t(tr, "ERROR_404_TITLE")}
+  lang={locale}
+  skipToContent={t(tr, "SKIP_TO_CONTENT")}
+  footerCopyright={t(tr, "FOOTER_COPYRIGHT")}
+>
   <section class="relative min-h-screen flex items-center justify-center bg-abyss overflow-hidden">
     <!-- Atmospheric gradient overlay -->
     <div
@@ -18,11 +30,11 @@ import CTAButton from '../components/CTAButton.astro';
 
     <!-- Content -->
     <div class="relative z-10 max-w-[680px] mx-auto px-6 text-center">
-      <SectionHeader label="404" title="Page Not Found" tag="h1" />
+      <SectionHeader label={t(tr, "ERROR_404_LABEL")} title={t(tr, "ERROR_404_TITLE")} tag="h1" />
       <p class="font-body text-lg text-moonstone/80 mb-10 leading-relaxed">
-        The path you seek has not yet been revealed. Return to the beginning and continue your journey.
+        {t(tr, "ERROR_404_MESSAGE")}
       </p>
-      <CTAButton href="/" text="Return Home" animated external={false} />
+      <CTAButton href={`/${locale}/`} text={t(tr, "ERROR_404_CTA")} animated external={false} />
     </div>
   </section>
 </BaseLayout>

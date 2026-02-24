@@ -2,6 +2,29 @@
 import SectionHeader from "../SectionHeader.astro";
 import ImageFeatureCard from "../ImageFeatureCard.astro";
 import QuoteBlock from "../QuoteBlock.astro";
+
+interface Props {
+  label: string;
+  title: string;
+  card1Title: string;
+  card1Desc: string;
+  card2Title: string;
+  card2Desc: string;
+  card3Title: string;
+  card3Desc: string;
+  card4Title: string;
+  card4Desc: string;
+  quote: string;
+}
+
+const {
+  label, title,
+  card1Title, card1Desc,
+  card2Title, card2Desc,
+  card3Title, card3Desc,
+  card4Title, card4Desc,
+  quote,
+} = Astro.props;
 ---
 
 <section
@@ -25,8 +48,8 @@ import QuoteBlock from "../QuoteBlock.astro";
   <div class="relative z-[1] max-w-[960px] mx-auto px-6">
     <div class="reveal">
       <SectionHeader
-        label="Sacred Circle"
-        title="Inside the sacred circle"
+        label={label}
+        title={title}
         id="sacred-circle-title"
       />
     </div>
@@ -34,32 +57,32 @@ import QuoteBlock from "../QuoteBlock.astro";
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
       <div class="reveal">
         <ImageFeatureCard
-          title="Unfiltered ceremony"
-          description="Raw, intimate moments from rituals and sacred practices at each site"
+          title={card1Title}
+          description={card1Desc}
           imageSrc="/helena-pink-robe-namaste-pose-great-sphinx-giza-portrait.jpeg"
           imageAlt="Helena reaching toward shaft of light in Egyptian temple"
         />
       </div>
       <div class="reveal">
         <ImageFeatureCard
-          title="Transmissions from the land"
-          description="My reflections, downloads, and channeled insights as I walk the ancient paths"
+          title={card2Title}
+          description={card2Desc}
           imageSrc="/helena-red-sandstone-cave-meditation-singing-bowl-flowers-portrait.jpeg"
           imageAlt="Helena meditating with singing bowl in red sandstone cave"
         />
       </div>
       <div class="reveal">
         <ImageFeatureCard
-          title="Behind the veil"
-          description="The preparation, the silence before ceremony, the moments between — what you never see on a public feed"
+          title={card3Title}
+          description={card3Desc}
           imageSrc="/helena-floral-dress-eroded-sandstone-rock-formation-cappadocia-portrait.jpeg"
           imageAlt="Helena in floral dress at eroded sandstone rock formation in Cappadocia"
         />
       </div>
       <div class="reveal">
         <ImageFeatureCard
-          title="A living map"
-          description="Follow the pilgrimage in real time as it unfolds across continents"
+          title={card4Title}
+          description={card4Desc}
           imageSrc="/spiritual-group-guided-tour-philae-temple-egypt-landscape.jpeg"
           imageAlt="Spiritual group guided tour at Philae Temple in Egypt"
         />
@@ -68,7 +91,7 @@ import QuoteBlock from "../QuoteBlock.astro";
 
     <div class="reveal">
       <QuoteBlock
-        quote="This is not content. This is a transmission. A thread connecting you to the places where the earth still speaks."
+        quote={quote}
       />
     </div>
   </div>

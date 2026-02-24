@@ -1,6 +1,32 @@
 ---
 import SectionHeader from "../SectionHeader.astro";
 import DestinationCard from "../DestinationCard.astro";
+
+interface Props {
+  label: string;
+  title: string;
+  intro: string;
+  egyptName: string;
+  egyptTagline: string;
+  egyptDesc: string;
+  cappadociaName: string;
+  cappadociaTagline: string;
+  cappadociaDesc: string;
+  baliName: string;
+  baliTagline: string;
+  baliDesc: string;
+  istanbulName: string;
+  istanbulTagline: string;
+  istanbulDesc: string;
+}
+
+const {
+  label, title, intro,
+  egyptName, egyptTagline, egyptDesc,
+  cappadociaName, cappadociaTagline, cappadociaDesc,
+  baliName, baliTagline, baliDesc,
+  istanbulName, istanbulTagline, istanbulDesc,
+} = Astro.props;
 ---
 
 <section
@@ -24,27 +50,22 @@ import DestinationCard from "../DestinationCard.astro";
   <div class="relative z-[1] max-w-[960px] mx-auto px-6">
     <div class="reveal">
       <SectionHeader
-        label="Sacred Ground"
-        title="Where the earth still speaks"
+        label={label}
+        title={title}
         id="destinations-title"
       />
     </div>
 
     <div class="reveal mb-12 max-w-[680px] mx-auto text-center">
-      <p>
-        Each destination on this pilgrimage was chosen not for its beauty —
-        though beauty is inevitable — but for its frequency. These are places
-        where the veil is thin, where the land itself holds memory, and where
-        the body begins to remember what the mind has forgotten.
-      </p>
+      <p>{intro}</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div class="reveal">
         <DestinationCard
-          name="Egypt"
-          tagline="The motherland of mystery"
-          description="Pyramids, temples, and tombs that still pulse with the energy of initiates who walked these halls thousands of years before us."
+          name={egyptName}
+          tagline={egyptTagline}
+          description={egyptDesc}
           primaryImage={{
             src: "/great-pyramid-giza-night-crescent-moon-dark-sky-portrait.jpeg",
             alt: "Great Pyramid of Giza under night sky with crescent moon",
@@ -57,9 +78,9 @@ import DestinationCard from "../DestinationCard.astro";
       </div>
       <div class="reveal">
         <DestinationCard
-          name="Cappadocia"
-          tagline="Carved by wind and worship"
-          description="Underground cities and rock-cut churches where early mystics retreated into the earth to find the divine."
+          name={cappadociaName}
+          tagline={cappadociaTagline}
+          description={cappadociaDesc}
           primaryImage={{
             src: "/hot-air-balloons-cappadocia-valleys-sunrise-aerial-landscape.jpeg",
             alt: "Hot air balloons over Cappadocia valleys at sunrise",
@@ -72,9 +93,9 @@ import DestinationCard from "../DestinationCard.astro";
       </div>
       <div class="reveal">
         <DestinationCard
-          name="Bali"
-          tagline="The island of living ceremony"
-          description="Waterfalls, temples, and jungle sanctuaries where daily offerings keep the doorway between worlds open."
+          name={baliName}
+          tagline={baliTagline}
+          description={baliDesc}
           primaryImage={{
             src: "/helena-white-dress-arms-raised-waterfall-bali-portrait.jpg",
             alt: "Helena in white dress with arms raised at a waterfall in Bali",
@@ -87,9 +108,9 @@ import DestinationCard from "../DestinationCard.astro";
       </div>
       <div class="reveal">
         <DestinationCard
-          name="Istanbul"
-          tagline="Where empires prayed"
-          description="Byzantine cisterns and ancient crossroads where East meets West beneath centuries of sacred architecture."
+          name={istanbulName}
+          tagline={istanbulTagline}
+          description={istanbulDesc}
           primaryImage={{
             src: "/basilica-cistern-istanbul-ancient-columns-water-reflection-portrait.jpeg",
             alt: "Basilica Cistern in Istanbul with ancient columns reflected in water",

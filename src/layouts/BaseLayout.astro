@@ -1,29 +1,48 @@
 ---
+import type { Locale } from "../i18n/ui";
+import LanguageSwitcher from "../components/LanguageSwitcher.astro";
+import '../styles/global.css';
+
 interface Props {
   title?: string;
   description?: string;
+  lang?: Locale;
+  skipToContent?: string;
+  footerCopyright?: string;
 }
 
 const {
   title = "Helena Houdova — Sacred Pilgrimage Journey | Subscribe",
-  description = "Follow Helena Houdova's pilgrimage to the world's most sacred sites. Subscribe for intimate access to ceremonies, transmissions, and ancient wisdom — with select opportunities to join in person.",
+  description = "Follow Helena Houdova\u2019s pilgrimage to the world\u2019s most sacred sites. Subscribe for intimate access to ceremonies, transmissions, and ancient wisdom — with select opportunities to join in person.",
+  lang = "en",
+  skipToContent = "Skip to content",
+  footerCopyright = "Helena Houdova. All rights reserved.",
 } = Astro.props;
 
-import '../styles/global.css';
+const canonicalBase = Astro.site?.origin ?? Astro.url.origin;
+const canonicalUrl = `${canonicalBase}/${lang}/`;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
 
+    <!-- Canonical & hreflang -->
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" hreflang="en" href={`${canonicalBase}/en/`} />
+    <link rel="alternate" hreflang="cs" href={`${canonicalBase}/cs/`} />
+    <link rel="alternate" hreflang="x-default" href={`${canonicalBase}/en/`} />
+
     <!-- Open Graph -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content={lang === "cs" ? "cs_CZ" : "en_US"} />
+    <meta property="og:locale:alternate" content={lang === "cs" ? "en_US" : "cs_CZ"} />
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -46,15 +65,17 @@ import '../styles/global.css';
       href="#main-content"
       class="sr-only focus:not-sr-only fixed top-4 left-4 z-[10000] rounded-md bg-purple-deep px-4 py-2 font-body text-gold-solar no-underline"
     >
-      Skip to content
+      {skipToContent}
     </a>
+
+    <LanguageSwitcher currentLocale={lang} />
 
     <main id="main-content">
       <slot />
     </main>
 
     <footer class="py-8 text-center text-sm text-moonstone bg-abyss">
-      <p>&copy; {new Date().getFullYear()} Helena Houdova. All rights reserved.</p>
+      <p>&copy; {new Date().getFullYear()} {footerCopyright}</p>
     </footer>
 
     <!-- Scroll reveal observer -->

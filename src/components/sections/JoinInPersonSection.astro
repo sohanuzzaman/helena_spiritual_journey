@@ -2,6 +2,17 @@
 import SectionHeader from "../SectionHeader.astro";
 import ImagePair from "../ImagePair.astro";
 import CTAButton from "../CTAButton.astro";
+
+interface Props {
+  label: string;
+  title: string;
+  body1: string;
+  body2: string;
+  body3: string;
+  ctaText: string;
+}
+
+const { label, title, body1, body2, body3, ctaText } = Astro.props;
 ---
 
 <section
@@ -18,27 +29,16 @@ import CTAButton from "../CTAButton.astro";
   <div class="relative z-[1] max-w-[680px] mx-auto px-6">
     <div class="reveal">
       <SectionHeader
-        label="Walk With Me"
-        title="Some paths are meant to be walked together"
+        label={label}
+        title={title}
         id="join-title"
       />
     </div>
 
     <div class="reveal space-y-6">
-      <p>
-        On select pilgrimages, a small number of souls will be invited to walk
-        alongside me. To stand on the sacred ground. To participate in ceremony.
-        To feel the earth beneath your feet, not through a screen.
-      </p>
-
-      <p>
-        These are intimate gatherings — limited by intention, not by numbers.
-      </p>
-
-      <p>
-        If this calls to you, subscribing is the first step. All in-person
-        journey invitations are shared inside the circle first.
-      </p>
+      <p>{body1}</p>
+      <p>{body2}</p>
+      <p>{body3}</p>
     </div>
 
     <div class="reveal mt-12">
@@ -70,7 +70,7 @@ import CTAButton from "../CTAButton.astro";
     <div class="reveal mt-12 text-center">
       <CTAButton
         href="https://www.instagram.com/"
-        text="Subscribe on Instagram"
+        text={ctaText}
       />
     </div>
   </div>

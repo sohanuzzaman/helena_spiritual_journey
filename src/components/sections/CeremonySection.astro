@@ -2,6 +2,15 @@
 import SectionHeader from "../SectionHeader.astro";
 import ImageGallery from "../ImageGallery.astro";
 import QuoteBlock from "../QuoteBlock.astro";
+
+interface Props {
+  label: string;
+  title: string;
+  body: string;
+  quote: string;
+}
+
+const { label, title, body, quote } = Astro.props;
 ---
 
 <section
@@ -18,19 +27,14 @@ import QuoteBlock from "../QuoteBlock.astro";
   <div class="relative z-[1] max-w-[1200px] mx-auto px-6">
     <div class="reveal">
       <SectionHeader
-        label="Ceremony & Practice"
-        title="What happens inside the circle"
+        label={label}
+        title={title}
         id="ceremony-title"
       />
     </div>
 
     <div class="reveal mb-12 max-w-[680px] mx-auto text-center">
-      <p>
-        Sound healing with crystal bowls and ancient drums. Rose petal offerings
-        on sacred ground. Rituals drawn from lineages that have never been
-        broken. These are not performances — they are portals. And inside the
-        circle, every woman becomes both witness and vessel.
-      </p>
+      <p>{body}</p>
     </div>
 
     <ImageGallery
@@ -87,7 +91,7 @@ import QuoteBlock from "../QuoteBlock.astro";
     />
 
     <div class="reveal mt-8">
-      <QuoteBlock quote="We do not perform ceremony. We become it." />
+      <QuoteBlock quote={quote} />
     </div>
   </div>
 </section>
