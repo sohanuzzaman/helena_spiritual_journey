@@ -110,7 +110,6 @@ const canonicalUrl = `${canonicalBase}/${lang}/`;
     <script is:inline>
       (function () {
         var PROJECT_KEY = "P43335b928ba643959d9755c542239a1d";
-        var API_BASE = "https://api.seliseblocks.com";
 
         // Store project key for UILM Chrome extension
         try { localStorage.setItem("uilm_project_key", PROJECT_KEY); } catch (e) {}
@@ -119,11 +118,9 @@ const canonicalUrl = `${canonicalBase}/${lang}/`;
         var cultureMap = { en: "en-US", cs: "cs-CZ" };
         var culture = cultureMap[lang] || "en-US";
 
-        var url = API_BASE + "/uilm/v1/Key/GetUilmFile?Language=" + encodeURIComponent(culture) + "&ModuleName=common&ProjectKey=" + encodeURIComponent(PROJECT_KEY);
+        var url = "/api/uilm?Language=" + encodeURIComponent(culture) + "&ModuleName=common&ProjectKey=" + encodeURIComponent(PROJECT_KEY);
 
-        fetch(url, {
-          headers: { "x-blocks-key": PROJECT_KEY },
-        })
+        fetch(url)
           .then(function (res) {
             if (!res.ok) {
               console.warn("[UILM] API returned status " + res.status);
