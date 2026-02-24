@@ -122,10 +122,7 @@ const canonicalUrl = `${canonicalBase}/${lang}/`;
         var url = API_BASE + "/uilm/v1/Key/GetUilmFile?Language=" + encodeURIComponent(culture) + "&ModuleName=common&ProjectKey=" + encodeURIComponent(PROJECT_KEY);
 
         fetch(url, {
-          headers: {
-            "x-blocks-key": PROJECT_KEY,
-            "accept": "application/json"
-          },
+          headers: { "x-blocks-key": PROJECT_KEY },
         })
           .then(function (res) {
             if (!res.ok) {
