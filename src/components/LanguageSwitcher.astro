@@ -29,6 +29,7 @@ const restOfPath = pathParts.length > 1 ? "/" + pathParts.slice(1).join("/") : "
     return (
       <a
         href={href}
+        data-lang-switch={locale}
         class:list={[
           "cta-button font-accent font-medium text-xs tracking-[0.15em] uppercase px-3 py-1.5 rounded-full transition-all duration-300",
           isActive
@@ -43,3 +44,13 @@ const restOfPath = pathParts.length > 1 ? "/" + pathParts.slice(1).join("/") : "
     );
   })}
 </nav>
+
+<script>
+  document.querySelectorAll<HTMLAnchorElement>("[data-lang-switch]").forEach((link) => {
+    link.addEventListener("click", () => {
+      const locale = link.dataset.langSwitch;
+      const secure = location.protocol === "https:" ? ";secure" : "";
+      document.cookie = `lang_pref=${locale};max-age=31536000;path=/;samesite=lax${secure}`;
+    });
+  });
+</script>

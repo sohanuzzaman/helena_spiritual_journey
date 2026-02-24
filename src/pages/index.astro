@@ -1,3 +1,5 @@
 ---
+// Fallback redirect — middleware handles the primary language detection
+// (cookie → Cloudflare geo → Accept-Language → default).
 return Astro.redirect("/en/");
 ---
