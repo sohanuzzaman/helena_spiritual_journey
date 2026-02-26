@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "helena-spiritual-journey",
+  "name": "helena-membership",
   "compatibility_date": "2026-02-23",
   "assets": { "directory": "./dist" }
 }
