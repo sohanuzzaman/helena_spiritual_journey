@@ -10,15 +10,9 @@ interface Props {
   body2: string;
   body3: string;
   quote: string;
-  labelKey?: string;
-  titleKey?: string;
-  body1Key?: string;
-  body2Key?: string;
-  body3Key?: string;
-  quoteKey?: string;
 }
 
-const { label, title, body1, body2, body3, quote, labelKey, titleKey, body1Key, body2Key, body3Key, quoteKey } = Astro.props;
+const { label, title, body1, body2, body3, quote } = Astro.props;
 ---
 
 <section
@@ -45,8 +39,6 @@ const { label, title, body1, body2, body3, quote, labelKey, titleKey, body1Key, 
         label={label}
         title={title}
         id="consciousness-title"
-        labelKey={labelKey}
-        titleKey={titleKey}
       />
     </div>
 
@@ -63,9 +55,9 @@ const { label, title, body1, body2, body3, quote, labelKey, titleKey, body1Key, 
     </div>
 
     <div class="reveal space-y-6 mt-12">
-      <p {...(body1Key ? { "data-t": body1Key } : {})}>{body1}</p>
-      <p {...(body2Key ? { "data-t": body2Key } : {})}>{body2}</p>
-      <p {...(body3Key ? { "data-t": body3Key } : {})}>{body3}</p>
+      <p>{body1}</p>
+      <p>{body2}</p>
+      <p>{body3}</p>
     </div>
 
     <div class="reveal mt-12">
@@ -83,7 +75,7 @@ const { label, title, body1, body2, body3, quote, labelKey, titleKey, body1Key, 
     </div>
 
     <div class="reveal">
-      <QuoteBlock quote={quote} quoteKey={quoteKey} />
+      <QuoteBlock quote={quote} />
     </div>
   </div>
 </section>

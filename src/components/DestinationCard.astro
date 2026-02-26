@@ -5,12 +5,9 @@ interface Props {
   description: string;
   primaryImage: { src: string; alt: string };
   secondaryImage: { src: string; alt: string };
-  nameKey?: string;
-  taglineKey?: string;
-  descKey?: string;
 }
 
-const { name, tagline, description, primaryImage, secondaryImage, nameKey, taglineKey, descKey } = Astro.props;
+const { name, tagline, description, primaryImage, secondaryImage } = Astro.props;
 ---
 
 <article class="destination-card glass-card h-full flex flex-col">
@@ -33,11 +30,11 @@ const { name, tagline, description, primaryImage, secondaryImage, nameKey, tagli
     </div>
   </div>
   <div class="mt-5 flex-grow">
-    <p class="font-accent font-medium text-[0.75rem] tracking-[0.2em] uppercase text-gold-solar mb-1" {...(nameKey ? { "data-t": nameKey } : {})}>
+    <p class="font-accent font-medium text-[0.75rem] tracking-[0.2em] uppercase text-gold-solar mb-1">
       {name}
     </p>
-    <h3 class="font-heading font-semibold text-pearl-white mb-2" {...(taglineKey ? { "data-t": taglineKey } : {})}>{tagline}</h3>
-    <p class="text-purple-mist text-sm leading-relaxed" {...(descKey ? { "data-t": descKey } : {})}>{description}</p>
+    <h3 class="font-heading font-semibold text-pearl-white mb-2">{tagline}</h3>
+    <p class="text-purple-mist text-sm leading-relaxed">{description}</p>
   </div>
 </article>
 

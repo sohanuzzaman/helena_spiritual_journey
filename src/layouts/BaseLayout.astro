@@ -9,8 +9,6 @@ interface Props {
   lang?: Locale;
   skipToContent?: string;
   footerCopyright?: string;
-  skipToContentKey?: string;
-  footerCopyrightKey?: string;
 }
 
 const {
@@ -19,8 +17,6 @@ const {
   lang = "en",
   skipToContent = "Skip to content",
   footerCopyright = "Helena Houdova. All rights reserved.",
-  skipToContentKey,
-  footerCopyrightKey,
 } = Astro.props;
 
 const canonicalBase = Astro.site?.origin ?? Astro.url.origin;
@@ -68,7 +64,6 @@ const canonicalUrl = `${canonicalBase}/${lang}/`;
     <a
       href="#main-content"
       class="sr-only focus:not-sr-only fixed top-4 left-4 z-[10000] rounded-md bg-purple-deep px-4 py-2 font-body text-gold-solar no-underline"
-      {...(skipToContentKey ? { "data-t": skipToContentKey } : {})}
     >
       {skipToContent}
     </a>
@@ -80,7 +75,7 @@ const canonicalUrl = `${canonicalBase}/${lang}/`;
     </main>
 
     <footer class="py-8 text-center text-sm text-moonstone bg-abyss">
-      <p {...(footerCopyrightKey ? { "data-t": footerCopyrightKey } : {})}>&copy; {new Date().getFullYear()} {footerCopyright}</p>
+      <p>&copy; {new Date().getFullYear()} {footerCopyright}</p>
     </footer>
 
     <!-- Scroll reveal observer -->
@@ -106,56 +101,5 @@ const canonicalUrl = `${canonicalBase}/${lang}/`;
       }
     </script>
 
-    <!-- Client-side UILM translation hydration -->
-    <script is:inline>
-      (function () {
-        var PROJECT_KEY = "P43335b928ba643959d9755c542239a1d";
-
-        // Store project key for Selise Blocks Chrome extension
-        try { localStorage.setItem("projectKey", PROJECT_KEY); } catch (e) {}
-
-        var lang = document.documentElement.lang || "en";
-        var cultureMap = { en: "en-US", cs: "cs-CZ" };
-        var culture = cultureMap[lang] || "en-US";
-
-        var url = "/api/uilm?Language=" + encodeURIComponent(culture) + "&ModuleName=common&ProjectKey=" + encodeURIComponent(PROJECT_KEY);
-
-        fetch(url)
-          .then(function (res) {
-            if (!res.ok) {
-              console.warn("[UILM] API returned status " + res.status);
-              throw new Error("HTTP " + res.status);
-            }
-            return res.json();
-          })
-          .then(function (data) {
-            var keys = Object.keys(data);
-            var updated = 0;
-            for (var i = 0; i < keys.length; i++) {
-              var key = keys[i];
-              var value = data[key];
-              if (typeof value !== "string" || !value) continue;
-              var elements = document.querySelectorAll('[data-t="' + key + '"]');
-              for (var j = 0; j < elements.length; j++) {
-                elements[j].textContent = value;
-                updated++;
-              }
-            }
-            console.log("[UILM] Updated " + updated + " elements from " + keys.length + " keys (" + culture + ")");
-
-            // Update document title and meta description
-            if (data["META_PAGE_TITLE"]) {
-              document.title = data["META_PAGE_TITLE"];
-            }
-            var metaDesc = document.querySelector('meta[name="description"]');
-            if (metaDesc && data["META_PAGE_DESCRIPTION"]) {
-              metaDesc.setAttribute("content", data["META_PAGE_DESCRIPTION"]);
-            }
-          })
-          .catch(function (err) {
-            console.warn("[UILM] Failed to load translations:", err);
-          });
-      })();
-    </script>
   </body>
 </html>

@@ -4,11 +4,9 @@ interface Props {
   description: string;
   imageSrc?: string;
   imageAlt?: string;
-  titleKey?: string;
-  descKey?: string;
 }
 
-const { title, description, imageSrc, imageAlt = '', titleKey, descKey } = Astro.props;
+const { title, description, imageSrc, imageAlt = '' } = Astro.props;
 ---
 
 <div class:list={['feature-card', 'glass-card', 'border-l-[3px]', 'border-l-gold-solar', 'h-full', { 'feature-card--with-image': !!imageSrc }]}>
@@ -24,8 +22,8 @@ const { title, description, imageSrc, imageAlt = '', titleKey, descKey } = Astro
     </div>
   )}
   <div>
-    <h3 class="font-heading font-semibold text-pearl-white mb-2" {...(titleKey ? { "data-t": titleKey } : {})}>{title}</h3>
-    <p class="text-purple-mist text-base leading-relaxed" {...(descKey ? { "data-t": descKey } : {})}>{description}</p>
+    <h3 class="font-heading font-semibold text-pearl-white mb-2">{title}</h3>
+    <p class="text-purple-mist text-base leading-relaxed">{description}</p>
   </div>
 </div>
 

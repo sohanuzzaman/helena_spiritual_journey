@@ -6,13 +6,9 @@ interface Props {
   headline: string;
   subheadline: string;
   ctaText: string;
-  labelKey?: string;
-  headlineKey?: string;
-  subheadlineKey?: string;
-  ctaTextKey?: string;
 }
 
-const { label, headline, subheadline, ctaText, labelKey, headlineKey, subheadlineKey, ctaTextKey } = Astro.props;
+const { label, headline, subheadline, ctaText } = Astro.props;
 ---
 
 <section
@@ -59,7 +55,6 @@ const { label, headline, subheadline, ctaText, labelKey, headlineKey, subheadlin
     <div class="reveal">
       <p
         class="font-accent font-medium text-[0.875rem] tracking-[0.2em] uppercase text-gold-solar mb-6"
-        {...(labelKey ? { "data-t": labelKey } : {})}
       >
         {label}
       </p>
@@ -69,7 +64,6 @@ const { label, headline, subheadline, ctaText, labelKey, headlineKey, subheadlin
       <h1
         class="text-gold-gradient font-heading font-normal leading-[1.05] mb-8"
         style="font-size: clamp(3rem, 8vw, 6rem);"
-        {...(headlineKey ? { "data-t": headlineKey } : {})}
       >
         {headline}
       </h1>
@@ -78,7 +72,6 @@ const { label, headline, subheadline, ctaText, labelKey, headlineKey, subheadlin
     <div class="reveal">
       <p
         class="text-pearl-white text-lg leading-relaxed mb-10 max-w-[680px] mx-auto"
-        {...(subheadlineKey ? { "data-t": subheadlineKey } : {})}
       >
         {subheadline}
       </p>
@@ -89,7 +82,6 @@ const { label, headline, subheadline, ctaText, labelKey, headlineKey, subheadlin
         href="https://www.instagram.com/"
         text={ctaText}
         animated={true}
-        textKey={ctaTextKey}
       />
     </div>
   </div>

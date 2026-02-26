@@ -1,12 +1,11 @@
 ---
 interface Props {
   quote: string;
-  quoteKey?: string;
 }
 
-const { quote, quoteKey } = Astro.props;
+const { quote } = Astro.props;
 ---
 
-<blockquote class="quote-block reveal relative font-heading italic font-normal text-gold-glow border-l-0 pl-6 max-w-[680px] mx-auto my-12 leading-snug" style="font-size: clamp(1.5rem, 3vw, 2rem);" {...(quoteKey ? { "data-t": quoteKey } : {})}>
+<blockquote class="quote-block reveal relative font-heading italic font-normal text-gold-glow border-l-0 pl-6 max-w-[680px] mx-auto my-12 leading-snug" style="font-size: clamp(1.5rem, 3vw, 2rem);">
   {quote}
 </blockquote>

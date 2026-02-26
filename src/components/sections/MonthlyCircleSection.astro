@@ -16,17 +16,6 @@ interface Props {
   card3Title: string;
   card3Desc: string;
   ctaText: string;
-  labelKey?: string;
-  titleKey?: string;
-  body1Key?: string;
-  body2Key?: string;
-  card1TitleKey?: string;
-  card1DescKey?: string;
-  card2TitleKey?: string;
-  card2DescKey?: string;
-  card3TitleKey?: string;
-  card3DescKey?: string;
-  ctaTextKey?: string;
 }
 
 const {
@@ -35,11 +24,6 @@ const {
   card2Title, card2Desc,
   card3Title, card3Desc,
   ctaText,
-  labelKey, titleKey, body1Key, body2Key,
-  card1TitleKey, card1DescKey,
-  card2TitleKey, card2DescKey,
-  card3TitleKey, card3DescKey,
-  ctaTextKey,
 } = Astro.props;
 ---
 
@@ -67,14 +51,12 @@ const {
         label={label}
         title={title}
         id="monthly-circle-title"
-        labelKey={labelKey}
-        titleKey={titleKey}
       />
     </div>
 
     <div class="reveal space-y-6 max-w-[680px] mx-auto mb-12">
-      <p {...(body1Key ? { "data-t": body1Key } : {})}>{body1}</p>
-      <p {...(body2Key ? { "data-t": body2Key } : {})}>{body2}</p>
+      <p>{body1}</p>
+      <p>{body2}</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
@@ -82,24 +64,18 @@ const {
         <FeatureCard
           title={card1Title}
           description={card1Desc}
-          titleKey={card1TitleKey}
-          descKey={card1DescKey}
         />
       </div>
       <div class="reveal">
         <FeatureCard
           title={card2Title}
           description={card2Desc}
-          titleKey={card2TitleKey}
-          descKey={card2DescKey}
         />
       </div>
       <div class="reveal">
         <FeatureCard
           title={card3Title}
           description={card3Desc}
-          titleKey={card3TitleKey}
-          descKey={card3DescKey}
         />
       </div>
     </div>
@@ -134,7 +110,6 @@ const {
       <CTAButton
         href="https://www.instagram.com/"
         text={ctaText}
-        textKey={ctaTextKey}
       />
     </div>
   </div>

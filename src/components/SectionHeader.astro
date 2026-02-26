@@ -4,18 +4,16 @@ interface Props {
   title: string;
   id?: string;
   tag?: 'h1' | 'h2' | 'h3';
-  labelKey?: string;
-  titleKey?: string;
 }
 
-const { label, title, id, tag: Tag = 'h2', labelKey, titleKey } = Astro.props;
+const { label, title, id, tag: Tag = 'h2' } = Astro.props;
 ---
 
 <header class="text-center mb-12 reveal">
-  <p class="section-label font-accent font-medium text-[0.875rem] uppercase text-gold-solar mb-4" {...(labelKey ? { "data-t": labelKey } : {})}>
+  <p class="section-label font-accent font-medium text-[0.875rem] uppercase text-gold-solar mb-4">
     {label}
   </p>
-  <Tag id={id} class="font-heading font-medium text-pearl-white mb-6" {...(titleKey ? { "data-t": titleKey } : {})}>
+  <Tag id={id} class="font-heading font-medium text-pearl-white mb-6">
     {title}
   </Tag>
   <div class="section-divider" aria-hidden="true"></div>
